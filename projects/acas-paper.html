@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دور التعلّم الآلي في تعزيز أنظمة كشف التسلل | The Role of Machine Learning in Enhancing Intrusion Detection Systems</title>
-<meta name="description" content="مراجعة أدبية لأنظمة كشف التسلل القائمة على التعلّم الآلي والعميق والمحوّلات.">
+<title>نظام توعية سيبرانية تكيّفي للبيئات التعليمية (ACAS) | Adaptive Cybersecurity Awareness System (ACAS)</title>
+<meta name="description" content="ورقة ACAS — نظام توعية سيبرانية تكيّفي للبيئات التعليمية باستخدام شجرة القرار.">
 <meta name="author" content="Ahmed Atiyah AL-Zahrani">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="دور التعلّم الآلي في تعزيز أنظمة كشف التسلل | The Role of Machine Learning in Enhancing Intrusion Detection Systems">
-<meta property="og:description" content="مراجعة أدبية لأنظمة كشف التسلل القائمة على التعلّم الآلي والعميق والمحوّلات.">
+<meta property="og:title" content="نظام توعية سيبرانية تكيّفي للبيئات التعليمية (ACAS) | Adaptive Cybersecurity Awareness System (ACAS)">
+<meta property="og:description" content="ورقة ACAS — نظام توعية سيبرانية تكيّفي للبيئات التعليمية باستخدام شجرة القرار.">
 <meta name="theme-color" content="#1A4A3A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -223,10 +223,10 @@ section[id]{scroll-margin-top:66px}
 </nav>
 <header class="hero">
   <div class="container">
-    <div class="hero-eyebrow"><span data-lang="ar">أساسيات الأمن السيبراني · جامعة الباحة</span><span data-lang="en">Cybersecurity Foundations · Al-Baha University</span></div>
-    <h1><span data-lang="ar">دور التعلّم الآلي في تعزيز أنظمة كشف التسلل</span><span data-lang="en">The Role of Machine Learning in Enhancing Intrusion Detection Systems</span></h1>
-    <p class="tagline"><span data-lang="ar">مراجعة أدبية شاملة لأساليب ML و DL والمحوّلات في كشف التسلل</span><span data-lang="en">A comprehensive literature review of ML, DL, and Transformer approaches to intrusion detection</span></p>
-    <p class="sub"><span data-lang="ar">ديسمبر ٢٠٢٥</span><span data-lang="en">December 2025</span></p>
+    <div class="hero-eyebrow"><span data-lang="ar">ورقة بحثية · تجربة ذاتية في الكتابة العلمية</span><span data-lang="en">Research Paper · A self-directed exercise in academic writing</span></div>
+    <h1><span data-lang="ar">نظام توعية سيبرانية تكيّفي للبيئات التعليمية (ACAS)</span><span data-lang="en">Adaptive Cybersecurity Awareness System (ACAS)</span></h1>
+    <p class="tagline"><span data-lang="ar">تصنيف الموظفين إلى ملفات مخاطر بخوارزمية شجرة القرار وتوصية محتوى تدريبي مخصّص</span><span data-lang="en">Classifying staff into risk profiles with a Decision Tree and recommending tailored training</span></p>
+    <p class="sub"><span data-lang="ar">بصيغة IEEE · Python و Streamlit و Scikit-learn · مسوّدة</span><span data-lang="en">IEEE format · Python, Streamlit, Scikit-learn · Draft</span></p>
   </div>
 </header>
 
@@ -234,49 +234,121 @@ section[id]{scroll-margin-top:66px}
 <section>
   <div class="prose">
 <div data-lang="ar">
-    <h3>نبذة عن المشروع</h3>
-    <p>بحث مرجعي يستعرض تطوّر أنظمة كشف التسلل (IDS) من الأساليب التقليدية القائمة على التوقيعات
-    إلى الأساليب الذكية القائمة على التعلّم الآلي والتعلّم العميق ونماذج المحوّلات، مع تركيز خاص
-    على بيئات إنترنت الأشياء ومحدودية مواردها.</p>
-    <h3>محاور البحث</h3>
+    <div class="callout"><b>لماذا كتبتُ هذه الورقة:</b> أعددتها بمبادرة ذاتية لأتعلّم بنية الورقة
+    العلمية المحكّمة عملياً — من صياغة المشكلة والفجوة، إلى المنهجية والصياغة الرياضية، إلى عرض
+    النتائج والمراجع بصيغة IEEE. هي <b>مسوّدة تعلّمية</b> لا ورقة منشورة.</div>
+
+    <h3>المشكلة</h3>
+    <p>العنصر البشري يبقى الحلقة الأضعف في سلسلة الأمن السيبراني، وبرامج التوعية التقليدية في
+    القطاع التعليمي تعتمد أسلوباً ثابتاً «مقاس واحد يناسب الجميع». فيتلقّى الموظف الإداري والأستاذ
+    الجامعي المادة نفسها رغم اختلاف مواطن ضعفهما — ما يولّد «إرهاق التدريب» وفتوراً في التفاعل.</p>
+
+    <h3>الفجوة البحثية</h3>
+    <p>كثير من الحلول التكيّفية القائمة تستخدم خوارزميات معقّدة كالشبكات العصبية التي تعمل
+    كـ«صندوق أسود»، فيصعب على الإداريين فهم <i>لماذا</i> صُنّف موظف بعينه عالي الخطورة. كما لا
+    تتوافق أغلبها مع ضوابط الهيئة الوطنية للأمن السيبراني ولا تراعي السياق المحلي.</p>
+
+    <h3>النظام المقترح</h3>
+    <p>حلقة تدخّل آلية من ثلاث مراحل:</p>
     <ul>
-      <li>نظرة عامة على أنظمة كشف التسلل: الأنواع الخمسة الرئيسية ومزاياها وحدودها</li>
-      <li>مراجعة أساليب التعلّم الآلي (XGBoost، التعلّم الجماعي، النماذج الهجينة)</li>
-      <li>مراجعة أساليب التعلّم العميق (CNN، LSTM، المرمّزات التلقائية، شبكات GAN)</li>
-      <li>مراجعة نماذج المحوّلات (TabNet، Res-TranBiLSTM، RTIDS) وتطبيقاتها</li>
-      <li>مقاييس التقييم: الدقة، الضبط، الاسترجاع، ودرجة F1</li>
-      <li>تحديات التطبيق: جودة البيانات، التكلفة الحسابية، القابلية للتفسير، انحراف المفهوم، والهجمات العدائية</li>
+      <li><b>الإدخال:</b> جمع بيانات سلوكية — الدور الوظيفي، الاستجابة لمحاكاة التصيّد، انضباط التحديثات.</li>
+      <li><b>المعالجة:</b> مصنّف شجرة القرار يحلّل البيانات ويسنِد ملف مخاطر.</li>
+      <li><b>الإخراج:</b> درجة خطورة وتوصية بوحدات تدريبية من منصة «حصين».</li>
     </ul>
-    <h3>جدول الأعمال ذات الصلة</h3>
-    <p>يتضمّن البحث جدولاً مقارناً يلخّص أكثر من ٢٠ عملاً بحثياً حديثاً، يوضّح لكل عمل النموذج المستخدم
-    ومزاياه وعيوبه — وهو الجدول الذي شكّل نقطة الانطلاق لتحديد الفجوة البحثية لرسالة الماجستير.</p>
-    <div class="callout"><b>الأثر على مسار الرسالة:</b> تبيّن من المراجعة أن أغلب الأعمال تُقيَّم على
-    مجموعة بيانات واحدة، وأن التعميم عبر مجموعات البيانات يمثّل فجوة بحثية قائمة.</div>
-    <h3>الملف</h3>
-    <ul><li><a href="https://drive.google.com/file/d/15-PfRnrBQgjkaIldNqNnPQeI_wqnDFR4/view" target="_blank" rel="noopener">عرض البحث الكامل</a></li></ul>
+
+    <h3>لماذا شجرة القرار؟</h3>
+    <p>اختيرت لأجل <b>قابلية التفسير</b> تحديداً: بنية منطقية شفافة تتيح للإداري تتبّع سبب التصنيف،
+    مع بناء النموذج بتعظيم <b>الكسب المعلوماتي (Information Gain)</b> فتُقدَّم المؤشرات السلوكية
+    الأهم. الورقة تعرض الصياغة الرياضية للإنتروبيا والكسب المعلوماتي.</p>
+
+    <h3>النتائج</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>المقياس</th><th>القيمة</th><th>الدلالة</th></tr>
+      <tr><td>الدقة (Accuracy)</td><td>٩٤٪</td><td>صحة التصنيف الإجمالية</td></tr>
+      <tr><td>الضبط (Precision)</td><td>٩٤٪</td><td>تقليل الإنذارات الكاذبة للملتزمين</td></tr>
+      <tr><td>الاسترجاع (Recall)</td><td>٩٤٪</td><td>التقاط عالي الخطورة — الأهم أمنياً</td></tr>
+      <tr><td>F1</td><td>٩٤٪</td><td>المتوسط التوافقي</td></tr>
+    </table>
+    </div>
+    <p>وتوزّع المشاركون على ثلاثة ملفات: عالي الخطورة ٣٥٪ (يفشل في اختبار التصيّد)، متوسط ٤٥٪
+    (تأخّر في التحديثات)، منخفض ٢٠٪ (يفعّل المصادقة متعدّدة العوامل).</p>
+
+    <div class="callout"><b>حدود الدراسة — بشفافية:</b> البيانات المستخدمة <b>تركيبية</b> صُمّمت
+    لمحاكاة سلوك موظفي جامعة سعودية، بسبب قيود الخصوصية على السجلات الحقيقية. لذا تُثبت النتائج
+    <b>جدوى التصميم</b> لا صحة الفرضية. التحقّق على بيانات حقيقية عمل مستقبلي.</div>
+
+    <h3>ما تعلّمته من التجربة</h3>
+    <ul>
+      <li>بناء ورقة بصيغة IEEE كاملة: الملخص، الأعمال ذات الصلة، المنهجية، النتائج، الخاتمة.</li>
+      <li>صياغة الفجوة البحثية بوضوح والتمييز بين إثبات الجدوى وإثبات الفرضية.</li>
+      <li>تنفيذ نموذج تصنيف بـ Scikit-learn وتقسيم البيانات ٨٠/٢٠ وتفسير المقاييس.</li>
+      <li>التوثيق بنظام IEEE وربط الحل بالمعايير الوطنية.</li>
+    </ul>
+
+    <h3>الورقة</h3>
+    <ul><li><a href="https://drive.google.com/file/d/1KHNWag7NF-h6yvHTkoCEoXc4qOt_V-FD/view" target="_blank" rel="noopener">عرض الورقة كاملةً (PDF)</a></li></ul>
  </div>
 <div data-lang="en">
-    <h3>Project Overview</h3>
-    <p>A survey paper tracing the evolution of Intrusion Detection Systems (IDS) from traditional
-    signature-based approaches to intelligent methods built on machine learning, deep learning,
-    and Transformer models, with particular focus on resource-constrained IoT environments.</p>
-    <h3>Research Areas Covered</h3>
+    <div class="callout"><b>Why I wrote this paper:</b> I prepared it on my own initiative to learn
+    the structure of a peer-reviewed paper in practice — from framing the problem and the gap, through
+    methodology and mathematical formulation, to presenting results and IEEE-style references. It is a
+    <b>learning draft</b>, not a published paper.</div>
+
+    <h3>The Problem</h3>
+    <p>The human element remains the weakest link in the cybersecurity chain, and traditional awareness
+    programmes in education rely on a static "one-size-fits-all" approach. An administrator and a faculty
+    member receive identical material despite entirely different vulnerabilities — producing training
+    fatigue and disengagement.</p>
+
+    <h3>The Research Gap</h3>
+    <p>Many existing adaptive solutions use complex algorithms such as neural networks that operate as
+    "black boxes", making it difficult for administrators to understand <i>why</i> a particular employee
+    was classified as high-risk. Most also fail to align with National Cybersecurity Authority controls
+    or account for the local context.</p>
+
+    <h3>The Proposed System</h3>
+    <p>An automated intervention loop in three phases:</p>
     <ul>
-      <li>Overview of IDS: the five main types, their advantages and limitations</li>
-      <li>Review of machine learning methods (XGBoost, ensemble learning, hybrid models)</li>
-      <li>Review of deep learning methods (CNN, LSTM, autoencoders, GANs)</li>
-      <li>Review of Transformer models (TabNet, Res-TranBiLSTM, RTIDS) and their applications</li>
-      <li>Evaluation metrics: accuracy, precision, recall, and F1 score</li>
-      <li>Deployment challenges: data quality, computational cost, interpretability, concept drift, and adversarial attacks</li>
+      <li><b>Input:</b> behavioural data — role, response to simulated phishing, update compliance.</li>
+      <li><b>Processing:</b> a Decision Tree classifier analyses the data and assigns a risk profile.</li>
+      <li><b>Output:</b> a risk score and recommended training modules from the Haseen platform.</li>
     </ul>
-    <h3>Related Work Table</h3>
-    <p>The paper includes a comparative table summarising over 20 recent studies, listing the model
-    used, its advantages, and its disadvantages — the table that became the starting point for
-    identifying the research gap for the M.Sc. thesis.</p>
-    <div class="callout"><b>Impact on thesis direction:</b> the review showed that most studies are
-    evaluated on a single dataset, and that cross-dataset generalization remains an open research gap.</div>
-    <h3>File</h3>
-    <ul><li><a href="https://drive.google.com/file/d/15-PfRnrBQgjkaIldNqNnPQeI_wqnDFR4/view" target="_blank" rel="noopener">View the full paper</a></li></ul>
+
+    <h3>Why a Decision Tree?</h3>
+    <p>Chosen specifically for <b>interpretability</b>: a transparent logic structure lets administrators
+    trace the reasoning behind a classification, while the model is built by maximising
+    <b>Information Gain</b>, prioritising the most critical behavioural indicators. The paper presents
+    the mathematical formulation of entropy and information gain.</p>
+
+    <h3>Results</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>Metric</th><th>Value</th><th>Implication</th></tr>
+      <tr><td>Accuracy</td><td>94%</td><td>Overall correctness of classification</td></tr>
+      <tr><td>Precision</td><td>94%</td><td>Minimises false alarms for compliant users</td></tr>
+      <tr><td>Recall</td><td>94%</td><td>Catching high-risk users — the security priority</td></tr>
+      <tr><td>F1-Score</td><td>94%</td><td>Harmonic mean</td></tr>
+    </table>
+    </div>
+    <p>Participants distributed across three profiles: high-risk 35% (fails the phishing test),
+    medium-risk 45% (delayed updates), low-risk 20% (MFA enabled).</p>
+
+    <div class="callout"><b>Limitations — stated transparently:</b> the data used is <b>synthetic</b>,
+    designed to simulate the behaviour of staff at a Saudi university, due to privacy restrictions on
+    real logs. The results therefore demonstrate <b>design feasibility</b> rather than validating the
+    hypothesis. Validation on real data is future work.</div>
+
+    <h3>What I Learned</h3>
+    <ul>
+      <li>Building a complete IEEE-format paper: abstract, related work, methodology, results, conclusion.</li>
+      <li>Framing a research gap clearly, and distinguishing feasibility from hypothesis validation.</li>
+      <li>Implementing a classifier with Scikit-learn, an 80/20 split, and interpreting the metrics.</li>
+      <li>IEEE referencing, and aligning a solution with national standards.</li>
+    </ul>
+
+    <h3>The Paper</h3>
+    <ul><li><a href="https://drive.google.com/file/d/1KHNWag7NF-h6yvHTkoCEoXc4qOt_V-FD/view" target="_blank" rel="noopener">View the full paper (PDF)</a></li></ul>
  </div>
   </div>
   <a href="../index.html" class="back"><span data-lang="ar">→ العودة إلى السيرة الذاتية</span><span data-lang="en">← Back to CV</span></a>
