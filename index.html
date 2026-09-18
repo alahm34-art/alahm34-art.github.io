@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أحمد عطية الزهراني — السيرة الذاتية | Ahmed AL-Zahrani — CV</title>
+<meta name="description" content="معلم حاسب آلي، مطوّر برمجيات مرخّص، وطالب ماجستير في الأمن السيبراني بجامعة الباحة. | Computer Science teacher, licensed software developer, and M.Sc. Cybersecurity student at Al-Baha University.">
+<meta name="author" content="Ahmed Atiyah AL-Zahrani">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="أحمد عطية الزهراني — السيرة الذاتية | Ahmed AL-Zahrani — CV">
+<meta property="og:description" content="معلم حاسب آلي، مطوّر برمجيات مرخّص، وطالب ماجستير في الأمن السيبراني بجامعة الباحة. | Computer Science teacher, licensed software developer, and M.Sc. Cybersecurity student at Al-Baha University.">
+<meta name="theme-color" content="#1A4A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#1A4A3A;--primary-dark:#0F2D24;--primary-light:#2A6B5F;
+--accent:#D4A574;--accent-warm:#B88950;--bg-page:#F8F7F4;--bg-card:#FFF;--bg-soft:#EFF3F0;
+--text-strong:#1A1A1A;--text-body:#2C3E33;--text-muted:#5A6B68;
+--border-soft:#E5E7E3;--border-strong:#C8CFCA;--radius:14px;--shadow:0 2px 14px rgba(26,74,58,.07)}
+html{scroll-behavior:smooth}
+body{font-family:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg-page);
+color:var(--text-body);line-height:1.8;-webkit-font-smoothing:antialiased}
+body[dir="ltr"]{font-family:"Inter","Segoe UI",Arial,sans-serif}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+backdrop-filter:blur(8px);border-bottom:1px solid var(--border-soft)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.nav-brand{font-weight:700;color:var(--primary);font-size:16px;text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:15px;flex-wrap:wrap;margin-inline-start:auto;align-items:center}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:13.5px;font-weight:600;
+padding:4px 2px;border-bottom:2px solid transparent;transition:.15s}
+.nav-links a:hover{color:var(--primary);border-bottom-color:var(--accent)}
+.lang-btn{background:var(--primary);color:#fff!important;border:none;font-family:inherit;
+font-size:13px;font-weight:700;padding:6px 14px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.lang-btn:hover{background:var(--primary-dark)}
+.hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+color:#fff;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-60px;inset-inline-start:-60px;width:340px;height:340px;
+border-radius:50%;background:radial-gradient(circle,rgba(212,165,116,.16) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:1.2px;margin-bottom:10px}
+.hero h1{font-size:40px;font-weight:700;line-height:1.25;margin-bottom:10px}
+.hero .tagline{font-size:17px;color:#C4D6CE;margin-bottom:8px}
+.hero .sub{font-size:14.5px;color:#9FBAB0;margin-bottom:26px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:11px 24px;
+border-radius:10px;transition:.18s;font-family:inherit;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:var(--primary-dark)}
+.btn-primary:hover{background:var(--accent-warm)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--accent)}
+section{padding:44px 0 8px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.section-head::after{content:"";flex:1;height:1px;background:var(--border-strong)}
+.section-head h2{font-size:24px;color:var(--primary);font-weight:700;white-space:nowrap}
+.section-lead{color:var(--text-muted);font-size:15px;margin-bottom:22px;max-width:760px}
+.card{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px 22px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{background:var(--bg-soft);color:var(--primary);border:1px solid var(--border-strong);
+padding:6px 14px;border-radius:20px;font-size:13.5px;font-weight:600}
+.tag-accent{background:#FBF2E6;color:var(--accent-warm);border-color:#EBD9BE}
+.timeline{position:relative;padding-inline-start:26px}
+.timeline::before{content:"";position:absolute;inset-inline-start:6px;top:6px;bottom:6px;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;margin-bottom:22px}
+.tl-item::before{content:"";position:absolute;inset-inline-start:-26px;top:8px;width:12px;height:12px;
+border-radius:50%;background:var(--accent);border:2.5px solid var(--bg-page)}
+.tl-date{font-size:13px;color:var(--accent-warm);font-weight:700;margin-bottom:2px}
+.tl-item h3{font-size:16.5px;color:var(--text-strong);margin-bottom:2px}
+.tl-org{font-size:14px;color:var(--primary-light);font-weight:600;margin-bottom:6px}
+.tl-item ul{margin:6px 0 0;padding-inline-start:20px}
+.tl-item li{font-size:14px;margin-bottom:3px}
+.pcard{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.18s;
+text-decoration:none;color:inherit}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(26,74,58,.13);border-color:var(--accent)}
+.pcard .code{display:inline-block;background:var(--primary);color:#fff;font-size:11.5px;font-weight:700;
+padding:3px 10px;border-radius:6px;margin-bottom:10px;align-self:flex-start;letter-spacing:.5px}
+.pcard .code.soft{background:var(--accent);color:var(--primary-dark)}
+.pcard h3{font-size:16.5px;color:var(--text-strong);margin-bottom:6px;line-height:1.5}
+.pcard .instr{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.pcard p{font-size:14px;flex:1;margin-bottom:12px}
+.pcard .more{font-size:13.5px;color:var(--primary);font-weight:700}
+body[dir="rtl"] .pcard .more::after{content:" \2190"}
+body[dir="ltr"] .pcard .more::after{content:" \2192"}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.stat{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:18px;text-align:center;box-shadow:var(--shadow)}
+.stat .num{font-size:30px;font-weight:700;color:var(--primary);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--text-muted);margin-top:4px}
+.skill-row{margin-bottom:14px}
+.skill-row b{color:var(--primary);font-size:14.5px;display:block;margin-bottom:6px}
+.clean-list{list-style:none;padding:0}
+.clean-list li{padding:8px 0;border-bottom:1px solid var(--border-soft);font-size:14.5px}
+.clean-list li:last-child{border-bottom:none}
+.clean-list li::before{content:"\25B8";color:var(--accent);font-weight:700;margin-inline-end:8px}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.contact-item{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:16px;box-shadow:var(--shadow)}
+.contact-item .lbl{font-size:12.5px;color:var(--text-muted);margin-bottom:3px}
+.contact-item a,.contact-item span{color:var(--primary);font-weight:600;font-size:14.5px;
+text-decoration:none;word-break:break-all}
+.back{display:inline-block;margin:22px 0 0;color:var(--primary);font-weight:700;font-size:14.5px;text-decoration:none}
+.prose h3{color:var(--primary);font-size:18px;margin:22px 0 8px}
+.prose p{margin-bottom:12px;font-size:15px}
+.prose ul{padding-inline-start:22px;margin-bottom:12px}
+.prose li{margin-bottom:5px;font-size:14.5px}
+.callout{background:#FBF2E6;border:1px solid #EBD9BE;border-inline-start:4px solid var(--accent);
+border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14.5px}
+.callout b{color:var(--accent-warm)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--border-soft);padding:9px 12px;text-align:start}
+th{background:var(--bg-soft);color:var(--primary);font-weight:700}
+footer{margin-top:50px;padding:26px 0;border-top:1px solid var(--border-soft);
+text-align:center;color:var(--text-muted);font-size:13px}
+[data-lang]{display:none}
+body[data-active="ar"] [data-lang="ar"]{display:revert}
+body[data-active="en"] [data-lang="en"]{display:revert}
+@media(max-width:640px){.hero h1{font-size:28px}.nav-links{gap:10px}
+.nav-links a{font-size:12.5px}.section-head h2{font-size:20px}}
+@media print{.nav,.hero-btns,.back,.lang-btn{display:none}body{background:#fff}
+.card,.pcard,.stat{box-shadow:none;break-inside:avoid}}
+
+/* ================= MOBILE / الجوال ================= */
+@media (max-width: 700px){
+  html{-webkit-text-size-adjust:100%}
+  .container{padding:0 14px}
+
+  /* شريط التنقّل: تمرير أفقي بدل التفاف متعدّد الأسطر */
+  .nav-inner{padding:9px 12px;gap:10px;flex-wrap:nowrap;align-items:center}
+  .nav-brand{font-size:14.5px;flex:0 0 auto}
+  .nav-links{
+    margin-inline-start:auto;flex-wrap:nowrap;overflow-x:auto;gap:14px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    max-width:calc(100% - 110px);padding-bottom:2px;
+  }
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{font-size:13px;white-space:nowrap;flex:0 0 auto}
+  .lang-btn{position:sticky;inset-inline-end:0;flex:0 0 auto;
+    font-size:12px;padding:5px 11px;box-shadow:-6px 0 8px rgba(255,255,255,.9)}
+
+  /* الواجهة */
+  .hero{padding:34px 0 30px}
+  .hero h1{font-size:25px;line-height:1.3}
+  .hero .tagline{font-size:14.5px}
+  .hero .sub{font-size:13px;margin-bottom:20px}
+  .hero-eyebrow{font-size:11.5px;letter-spacing:.6px}
+  .hero-btns{gap:9px}
+  .btn{font-size:13.5px;padding:10px 18px;flex:1 1 auto;text-align:center}
+
+  /* الأقسام */
+  section{padding:30px 0 4px}
+  .section-head h2{font-size:19px}
+  .section-lead{font-size:14px}
+  .card{padding:16px 15px}
+  .pcard{padding:16px 15px}
+  .pcard h3{font-size:15.5px}
+  .pcard p{font-size:13.5px}
+  .grid{gap:13px}
+
+  /* الخط الزمني */
+  .timeline{padding-inline-start:20px}
+  .timeline::before{inset-inline-start:4px}
+  .tl-item::before{inset-inline-start:-20px;width:10px;height:10px}
+  .tl-item h3{font-size:15px}
+  .tl-item li{font-size:13.5px}
+
+  /* الأرقام */
+  .stats{grid-template-columns:repeat(2,1fr);gap:11px}
+  .stat{padding:14px 8px}
+  .stat .num{font-size:25px}
+  .stat .lbl{font-size:12.5px}
+
+  /* الوسوم والقوائم */
+  .tag{font-size:12.5px;padding:5px 12px}
+  .clean-list li{font-size:13.5px;padding:7px 0}
+  .skill-row{font-size:13.5px}
+
+  /* التواصل */
+  .contact-grid{grid-template-columns:1fr;gap:11px}
+  .contact-item a,.contact-item span{font-size:13.5px}
+
+  /* صفحات المشاريع */
+  .prose p{font-size:14px}
+  .prose li{font-size:13.5px}
+  .prose h3{font-size:16px}
+  .callout{padding:12px 14px;font-size:13.5px}
+
+  /* الجداول: تمرير أفقي بدل الانضغاط */
+  table{display:block;overflow-x:auto;white-space:nowrap;
+    -webkit-overflow-scrolling:touch;font-size:13px}
+  th,td{padding:8px 10px}
+
+  footer{font-size:12px;padding:20px 0}
+}
+
+@media (max-width: 380px){
+  .hero h1{font-size:22px}
+  .stats{grid-template-columns:1fr}
+  .section-head h2{font-size:17.5px}
+}
+
+
+section[id]{scroll-margin-top:66px}
+</style>
+</head>
+<body dir="ltr" data-active="en">
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span data-lang="ar">أحمد الزهراني</span><span data-lang="en">Ahmed AL-Zahrani</span></a>
+    <div class="nav-links">
+      <a href="#about"><span data-lang="ar">نبذة</span><span data-lang="en">About</span></a>
+      <a href="#research"><span data-lang="ar">الاهتمامات البحثية</span><span data-lang="en">Research</span></a>
+      <a href="#courses"><span data-lang="ar">مشاريع الجامعة</span><span data-lang="en">University Projects</span></a>
+      <a href="#projects"><span data-lang="ar">مشاريع المدرسة</span><span data-lang="en">School Projects</span></a>
+      <a href="#initiatives"><span data-lang="ar">مبادراتي</span><span data-lang="en">Initiatives</span></a>
+      <a href="#experience"><span data-lang="ar">الخبرة</span><span data-lang="en">Experience</span></a>
+      <a href="#skills"><span data-lang="ar">المهارات</span><span data-lang="en">Skills</span></a>
+      <a href="#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">العربية</button>
+    </div>
+  </div>
+</nav>
+<header class="hero" id="hero">
+  <div class="container">
+    <div class="hero-eyebrow"><span data-lang="ar">جامعة الباحة · ماجستير العلوم في الأمن السيبراني</span><span data-lang="en">Al-Baha University · M.Sc. in Cybersecurity</span></div>
+    <h1><span data-lang="ar">أحمد عطية حسن الزهراني</span><span data-lang="en">Ahmed Atiyah Hassan AL-Zahrani</span></h1>
+    <p class="tagline"><span data-lang="ar">معلم حاسب آلي · مطوّر برمجيات مرخّص · باحث في الأمن السيبراني</span><span data-lang="en">Computer Science Teacher · Licensed Software Developer · Cybersecurity Researcher</span></p>
+    <p class="sub"><span data-lang="ar">١٦ عاماً في تعليم الحاسب · رسالة ماجستير في محوّل هجين خفيف لكشف التسلل بإنترنت الأشياء</span><span data-lang="en">16 years teaching computer science · M.Sc. thesis on a lightweight hybrid Transformer IDS for IoT</span></p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary"><span data-lang="ar">تواصل معي</span><span data-lang="en">Get in Touch</span></a>
+      <a href="files/CV_Ahmed_AR.pdf" class="btn btn-ghost" data-lang="ar">تحميل السيرة (PDF)</a>
+      <a href="files/CV_Ahmed_EN.pdf" class="btn btn-ghost" data-lang="en">Download CV (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<section id="about">
+  <div class="section-head"><h2><span data-lang="ar">نبذة عني</span><span data-lang="en">About Me</span></h2></div>
+  <div class="card">
+    <p data-lang="ar">معلم حاسب آلي متقدّم بخبرة تمتد <b>١٦ عاماً</b> في التعليم الثانوي، حاصل على بكالوريوس الحاسب الآلي التربوي من جامعة أم القرى بمرتبة الشرف الثانية. أعمل كذلك مطوّر ومصمم برمجيات مستقل بترخيص عمل حر رسمي، وأبني تطبيقات ويب عربية تخدم البيئة التعليمية.</p>
+    <p data-lang="en">A Computer Science educator with <b>16 years</b> of secondary-school teaching experience, holding a B.Sc. in Educational Computer Science from Umm Al-Qura University with Second-Class Honours. I also work as an independent software developer and designer under an official Saudi freelance licence, building Arabic-language web applications that serve the education sector.</p>
+    <p data-lang="ar" style="margin-top:12px">حالياً طالب ماجستير في الأمن السيبراني بجامعة الباحة، وأتجه إلى مسار الرسالة في بناء <b>محوّل هجين خفيف لكشف التسلل في شبكات إنترنت الأشياء محدودة الموارد</b> — يجمع الاختيار الديناميكي للسمات مع الالتفاف المحلي والانتباه الشامل الكفء، ويُقيَّم على ثلاثة أبعاد معاً: جودة الكشف، وكلفة الحوسبة، وقابلية الانتقال عبر مجموعات البيانات.</p>
+    <p data-lang="en" style="margin-top:12px">I am currently an M.Sc. Cybersecurity student at Al-Baha University, entering the thesis track on a <b>lightweight hybrid Transformer for intrusion detection in resource-constrained IoT networks</b> — combining dynamic feature selection with local convolution and efficient global attention, evaluated on three dimensions together: detection quality, computational cost, and cross-dataset transfer.</p>
+  </div>
+</section>
+<section id="research">
+  <div class="section-head"><h2><span data-lang="ar">الاهتمامات البحثية</span><span data-lang="en">Research Interests</span></h2></div>
+  <div class="tags">
+    <span class="tag tag-accent"><span data-lang="ar">نماذج المحوّلات الخفيفة</span><span data-lang="en">Lightweight Transformers</span></span>
+    <span class="tag tag-accent"><span data-lang="ar">التعميم عبر مجموعات البيانات</span><span data-lang="en">Cross-Dataset Transfer</span></span>
+    <span class="tag"><span data-lang="ar">كشف التسلل (IDS)</span><span data-lang="en">Intrusion Detection (IDS)</span></span>
+    <span class="tag"><span data-lang="ar">إنترنت الأشياء (IoT)</span><span data-lang="en">Internet of Things (IoT)</span></span>
+    <span class="tag"><span data-lang="ar">نماذج المحوّلات</span><span data-lang="en">Transformer Models</span></span>
+    <span class="tag"><span data-lang="ar">التعلّم الآلي</span><span data-lang="en">Machine Learning</span></span>
+    <span class="tag"><span data-lang="ar">التعلّم العميق</span><span data-lang="en">Deep Learning</span></span>
+    <span class="tag"><span data-lang="ar">الكشف عن الشذوذ</span><span data-lang="en">Anomaly Detection</span></span>
+    <span class="tag"><span data-lang="ar">أمن أنظمة التشغيل</span><span data-lang="en">Operating System Security</span></span>
+    <span class="tag"><span data-lang="ar">التشفير التطبيقي</span><span data-lang="en">Applied Cryptography</span></span>
+    <span class="tag"><span data-lang="ar">أمن الشبكات</span><span data-lang="en">Network Security</span></span>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3 style="color:var(--primary);font-size:17px;margin-bottom:8px"><span data-lang="ar">الطموح البحثي</span><span data-lang="en">Research Ambition</span></h3>
+    <p data-lang="ar" style="font-size:14.5px">تعاني شبكات إنترنت الأشياء من معضلة مزدوجة: النماذج التقليدية سريعة لكنها تفوّت الأنماط الزمنية، ونماذج المحوّلات العميقة تلتقطها لكن بكلفة حوسبة لا تحتملها الأجهزة محدودة الموارد. تبني الرسالة محوّلاً هجيناً خفيفاً يجمع الالتفاف المحلي مع الانتباه الشامل، وتقيس ثلاثة أبعاد معاً: جودة الكشف، وكلفة الحوسبة، وقابلية الانتقال إلى مجموعة بيانات لم يرها النموذج. البيانات: RT-IoT2022 و N-BaIoT و IoT-23.</p>
+    <p data-lang="en" style="font-size:14.5px">IoT networks face a double bind: classical models are fast but miss temporal patterns, while deep Transformers capture them at a computational cost constrained devices cannot bear. This thesis builds a lightweight hybrid Transformer combining local convolution with global attention, and measures three dimensions together: detection quality, computational cost, and transfer to a dataset the model has never seen. Datasets: RT-IoT2022, N-BaIoT, and IoT-23.</p>
+  </div>
+</section>
+<section id="courses">
+  <div class="section-head"><h2><span data-lang="ar">مقررات الماجستير ومشاريعها</span><span data-lang="en">M.Sc. Coursework & Projects</span></h2></div>
+  <p class="section-lead"><span data-lang="ar">مقررات برنامج ماجستير الأمن السيبراني — جامعة الباحة، مع المشروع البحثي المنفّذ في كل مقرر.</span><span data-lang="en">Courses from the M.Sc. Cybersecurity programme at Al-Baha University, with the research project completed in each.</span></p>
+  <div class="grid grid-2">
+    <a href="files/ACAS_Cybersecurity_Paper_Ahmed_Alzahrani.pdf" class="pcard" target="_blank">
+      <span class="code"><span data-lang="ar">ورقة بحثية</span><span data-lang="en">Research Paper</span></span>
+      <h3><span data-lang="ar">نظام توعية سيبرانية تكيّفي للبيئات التعليمية (ACAS)</span><span data-lang="en">Adaptive Cybersecurity Awareness System (ACAS)</span></h3>
+      <div class="instr"><span data-lang="ar">بصيغة IEEE · Python · Streamlit</span><span data-lang="en">IEEE format · Python · Streamlit</span></div>
+      <p><span data-lang="ar">نظام يصنّف الموظفين إلى ثلاثة ملفات مخاطر بخوارزمية شجرة القرار (دقة ٩٤٪) ويوصي بمحتوى تدريبي مخصّص من منصة «حصين».</span><span data-lang="en">A system classifying staff into three risk profiles using a Decision Tree classifier (94% accuracy), recommending tailored training from the NCA Haseen platform.</span></p>
+      <span class="more"><span data-lang="ar">عرض الورقة</span><span data-lang="en">View paper</span></span>
+    </a>
+
+    <a href="projects/ids-survey.html" class="pcard">
+      <span class="code"><span data-lang="ar">أساسيات الأمن السيبراني</span><span data-lang="en">Cybersecurity Foundations</span></span>
+      <h3><span data-lang="ar">دور التعلّم الآلي في تعزيز أنظمة كشف التسلل</span><span data-lang="en">The Role of Machine Learning in Enhancing Intrusion Detection Systems</span></h3>
+            <p><span data-lang="ar">مسح منهجي لأكثر من ٢٠ عملاً: التعلّم الآلي الكلاسيكي (XGBoost، الجماعي)، والعميق (CNN، LSTM، GAN)، والمحوّلات (TabNet، RTIDS) — مع جدول مقارن للمزايا والقيود.</span><span data-lang="en">A systematic survey of 20+ studies: classical ML (XGBoost, ensembles), deep learning (CNN, LSTM, GANs), and Transformers (TabNet, RTIDS) — with a comparative strengths/limitations table.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/rootkit-detection.html" class="pcard">
+      <span class="code"><span data-lang="ar">أمن أنظمة التشغيل</span><span data-lang="en">Operating System Security</span></span>
+      <h3><span data-lang="ar">كشف الجذور الخفية عبر الشذوذ الزمني في نشاط النواة</span><span data-lang="en">Rootkit Detection through Temporal Anomalies in Kernel Activity</span></h3>
+            <p><span data-lang="ar">بناء خط كشف إحصائي كامل بـ Python: متجهات سمات من تسعة مئينات، خط أساس أحادي الصنف، تسجيل بمسافة Mahalanobis وقيمة chi-square، ومسح ٢٠٠ عتبة. النتيجة: F1 = ٠٫٩٩٩ بإنذار كاذب ٠٫٢٪.</span><span data-lang="en">A complete statistical detection pipeline in Python: nine-quantile feature vectors, a one-class baseline, Mahalanobis + chi-square scoring, and a 200-point threshold sweep. Result: F1 = 0.999 at 0.2% FPR.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/whatsapp-crypto.html" class="pcard">
+      <span class="code"><span data-lang="ar">التشفير</span><span data-lang="en">Cryptography</span></span>
+      <h3><span data-lang="ar">تحليل البنية التشفيرية لتطبيق واتساب</span><span data-lang="en">Cryptographic Architecture Analysis of WhatsApp</span></h3>
+            <p><span data-lang="ar">تحليل تقني للتشفير التام بين الطرفين: Curve25519 و AES-256-GCM وبروتوكول Signal، مع دراسة نقاط الضعف العملية.</span><span data-lang="en">Technical analysis of end-to-end encryption: Curve25519, AES-256-GCM, and the Signal Protocol, with its practical weaknesses.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/network-security.html" class="pcard">
+      <span class="code"><span data-lang="ar">أمن الشبكات</span><span data-lang="en">Network Security</span></span>
+      <h3><span data-lang="ar">أسس أمن الشبكات — كشف أنماط الهجوم والتحكم بالوصول</span><span data-lang="en">Network Security Foundations — Attack Detection and Access Control</span></h3>
+            <p><span data-lang="ar">عرض أكاديمي من ٦٨ شريحة يغطي الفصول ١٠–١٢: كشف أنماط الهجوم، التحكم بالوصول للشبكة، وتطوير السياسات وإنفاذها.</span><span data-lang="en">A 68-slide academic presentation covering Chapters 10–12: attack pattern detection, network access control, and policy development.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/tsp-algorithms.html" class="pcard">
+      <span class="code"><span data-lang="ar">الخوارزميات المتقدمة</span><span data-lang="en">Advanced Algorithms</span></span>
+      <h3><span data-lang="ar">مسألة البائع المتجول: القوة الغاشمة مقابل البرمجة الديناميكية</span><span data-lang="en">Traveling Salesman Problem: Brute Force vs. Dynamic Programming</span></h3>
+            <p><span data-lang="ar">تنفيذ ومقارنة خوارزميتين وتحليل التعقيد الزمني والمكاني، مطبّق على سيناريو لوجستي حقيقي في منطقة الباحة.</span><span data-lang="en">Implementation, comparison, and complexity analysis of two algorithms applied to a real logistics scenario in the Al-Baha region.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/research-methods.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">منهجيات البحث</span><span data-lang="en">Research Methods</span></span>
+      <h3><span data-lang="ar">تحديد مجال بحثي: التعميم عبر مجموعات البيانات</span><span data-lang="en">Research Area Brief: Cross-Dataset Generalization</span></h3>
+      <div class="instr"><span data-lang="ar">مشروع تحديد الفجوة البحثية</span><span data-lang="en">Research gap identification project</span></div>
+      <p><span data-lang="ar">صياغة مجال بحثي متكامل: المشكلة، المستفيدون، الفجوة غير المحلولة، ونوعا المساهمة المقترحة مع أدلّة كل منهما.</span><span data-lang="en">A complete research area brief: the problem, beneficiaries, the unresolved gap, and two proposed contribution types with their evidence.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+  </div>
+
+  <div class="card" style="margin-top:20px">
+    <h3 style="color:var(--primary);font-size:17px;margin-bottom:12px"><span data-lang="ar">مواد الماجستير والمهارات المكتسبة</span><span data-lang="en">M.Sc. Subjects and Skills Gained</span></h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr>
+        <th><span data-lang="ar">المادة</span><span data-lang="en">Subject</span></th>
+        <th><span data-lang="ar">المهارات المكتسبة</span><span data-lang="en">Skills gained</span></th>
+      </tr>
+      <tr><td><span data-lang="ar">أساسيات الأمن السيبراني</span><span data-lang="en">Cybersecurity Foundations</span></td><td><span data-lang="ar">أنظمة كشف التسلل · التعلّم الآلي والعميق للأمن · المراجعة الأدبية المنهجية</span><span data-lang="en">IDS · ML/DL for security · Systematic literature review</span></td></tr>
+      <tr><td><span data-lang="ar">التشفير</span><span data-lang="en">Cryptography</span></td><td><span data-lang="ar">التشفير المتماثل وغير المتماثل · بروتوكولات تبادل المفاتيح · تحليل نماذج التهديد</span><span data-lang="en">Symmetric/asymmetric encryption · Key exchange · Threat modelling</span></td></tr>
+      <tr><td><span data-lang="ar">تحليل وتصميم الخوارزميات المتقدم</span><span data-lang="en">Advanced Algorithm Analysis &amp; Design</span></td><td><span data-lang="ar">تحليل التعقيد الزمني والمكاني · البرمجة الديناميكية · القياس التجريبي</span><span data-lang="en">Complexity analysis · Dynamic programming · Empirical benchmarking</span></td></tr>
+      <tr><td><span data-lang="ar">أمن أنظمة التشغيل</span><span data-lang="en">Operating System Security</span></td><td><span data-lang="ar">أمن النواة · الكشف الإحصائي عن الشذوذ · التحليل النقدي للأوراق العلمية</span><span data-lang="en">Kernel security · Statistical anomaly detection · Critical paper analysis</span></td></tr>
+      <tr><td><span data-lang="ar">أمن الشبكات</span><span data-lang="en">Network Security</span></td><td><span data-lang="ar">كشف أنماط الهجوم · التحكم بالوصول · بناء السياسات الأمنية وإنفاذها</span><span data-lang="en">Attack pattern detection · Access control · Security policy enforcement</span></td></tr>
+      <tr><td><span data-lang="ar">منهجيات البحث</span><span data-lang="en">Research Methods</span></td><td><span data-lang="ar">صياغة المشكلة والأسئلة البحثية · تحديد الفجوة · تصميم بروتوكولات التقييم</span><span data-lang="en">Problem framing · Gap identification · Evaluation protocol design</span></td></tr>
+    </table>
+    </div>
+  </div>
+
+</section>
+<section id="projects">
+  <div class="section-head"><h2><span data-lang="ar">مشاريعي البرمجية</span><span data-lang="en">Software Projects</span></h2></div>
+  <p class="section-lead"><span data-lang="ar">تطبيقات ويب عربية طوّرتها لخدمة البيئة التعليمية، متوافقة مع معايير وزارة التعليم.</span><span data-lang="en">Arabic web applications I built for the education sector, aligned with Saudi Ministry of Education standards.</span></p>
+  <div class="grid grid-2">
+    <a href="projects/operational-planning-app.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">تطبيق ويب</span><span data-lang="en">Web Application</span></span>
+      <h3><span data-lang="ar">نظام الخطة التشغيلية المدرسية</span><span data-lang="en">School Operational Planning System</span></h3>
+      <div class="instr"><span data-lang="ar">Flask · SQLite · تصدير Word</span><span data-lang="en">Flask · SQLite · Word export</span></div>
+      <p><span data-lang="ar">نظام متكامل لبناء الخطة التشغيلية وفق معايير ورش وزارة التعليم: ستة مجالات، تسعة أهداف استراتيجية، حاسبات خط الأساس، ومدقّق جودة الخطة.</span><span data-lang="en">A complete system for building school operational plans aligned with Saudi MoE workshop standards: six domains, nine strategic goals, live baseline calculators, and a plan-quality auditor.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="projects/school-plans-app.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">تطبيق ويب</span><span data-lang="en">Web Application</span></span>
+      <h3><span data-lang="ar">نظام متابعة الخطط المدرسية</span><span data-lang="en">School Plans Tracking System</span></h3>
+      <div class="instr"><span data-lang="ar">Flask · نظام تراخيص · إصدار 4.3</span><span data-lang="en">Flask · licensing system · v4.3</span></div>
+      <p><span data-lang="ar">نظام لمتابعة تنفيذ الخطط المدرسية مع توليد رموز QR، ونظام تراخيص آمن بـ HMAC-SHA256، وحزم توزيع كاملة للويندوز.</span><span data-lang="en">A system for tracking school plan execution with QR code generation, a secure HMAC-SHA256 licensing system, and full Windows distribution packages.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+  </div>
+</section>
+<section id="initiatives">
+  <div class="section-head"><h2><span data-lang="ar">مبادراتي وبرامجي</span><span data-lang="en">Initiatives & Programmes</span></h2></div>
+  <p class="section-lead"><span data-lang="ar">مبادرات تطوير مهني وبرامج مدرسية أقودها داخل بيئتي التعليمية.</span><span data-lang="en">Professional-development initiatives and school programmes I lead in my educational environment.</span></p>
+  <div class="grid grid-3">
+    <a href="initiatives/tamkeen.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">مبادرة</span><span data-lang="en">Initiative</span></span>
+      <h3><span data-lang="ar">مبادرة تمكين</span><span data-lang="en">Tamkeen Initiative</span></h3>
+      <div class="instr"><span data-lang="ar">التطوير المهني ودعم الرخصة المهنية</span><span data-lang="en">Professional development & teacher licensing</span></div>
+      <p><span data-lang="ar">مبادرة لرفع نسبة حصول المعلمين على الرخصة المهنية عبر منهجية من خمس خطوات، بمنصة إلكترونية وتحليل بيانات.</span><span data-lang="en">An initiative to raise the teacher professional-licence attainment rate through a five-step method, supported by a web platform and data analysis.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="initiatives/rased.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">مبادرة</span><span data-lang="en">Initiative</span></span>
+      <h3><span data-lang="ar">مبادرة مِرصاد</span><span data-lang="en">Mirsad Initiative</span></h3>
+      <div class="instr"><span data-lang="ar">الرصد والمتابعة</span><span data-lang="en">Monitoring & tracking</span></div>
+      <p><span data-lang="ar">أداة لامركزية تربط كل هدف تشغيلي بمؤشره وخط أساسه ومستهدفه، وتحوّل المتابعة إلى رصد لحظي بشواهد موثّقة عبر QR.</span><span data-lang="en">A decentralised tool linking every operational goal to its indicator, baseline, and target, turning follow-up into live monitoring with QR-documented evidence.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+    <a href="initiatives/itqan.html" class="pcard">
+      <span class="code soft"><span data-lang="ar">مبادرة</span><span data-lang="en">Initiative</span></span>
+      <h3><span data-lang="ar">مبادرة إتقان</span><span data-lang="en">Itqan Initiative</span></h3>
+      <div class="instr"><span data-lang="ar">استدامة التعلّم والتمكين الطلابي</span><span data-lang="en">Learning retention &amp; student empowerment</span></div>
+      <p><span data-lang="ar">أداة تعليمية تعتمد التكرار المتباعد لمعالجة التبخّر المعرفي، مع تلعيب الإنتاج المعرفي والتعلّم بالأقران.</span><span data-lang="en">An educational tool using spaced repetition to address knowledge decay, with gamified content creation and peer learning.</span></p>
+      <span class="more"><span data-lang="ar">عرض التفاصيل</span><span data-lang="en">View details</span></span>
+    </a>
+  </div>
+</section>
+<section id="experience">
+  <div class="section-head"><h2><span data-lang="ar">الخبرة المهنية</span><span data-lang="en">Professional Experience</span></h2></div>
+  <div class="card"><div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">يناير ٢٠٠٨ — حتى الآن</span><span data-lang="en">January 2008 — Present</span></div>
+        <h3><span data-lang="ar">معلم حاسب آلي (معلم متقدّم)</span><span data-lang="en">Computer Science Teacher (Advanced Rank)</span></h3>
+        <div class="tl-org"><span data-lang="ar">متوسطة وثانوية الجوفاء — مكتب تعليم المندق</span><span data-lang="en">Al-Jawfaa Intermediate & Secondary School — Al-Mandaq Education Office</span></div>
+        <ul data-lang="ar"><li>تعليم الطلاب وفق استراتيجيات التعليم الحديث وتنمية التفكير والإبداع</li><li>دعم الطلاب في الأعمال والمهارات الرقمية</li></ul>
+        <ul data-lang="en"><li>Teaching students using modern instructional strategies, developing thinking and creativity</li><li>Supporting students in digital skills and projects</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">يناير ٢٠٢٤ — حتى الآن</span><span data-lang="en">January 2024 — Present</span></div>
+        <h3><span data-lang="ar">رئيس فريق التقويم الذاتي</span><span data-lang="en">Head of the Self-Evaluation Team</span></h3>
+        <div class="tl-org"><span data-lang="ar">المدرسة</span><span data-lang="en">School</span></div>
+        <ul data-lang="ar"><li>إنشاء فريق التقويم الذاتي وتوزيع المهام وبناء السجلات</li><li>إنشاء خطط التحسين والتطوير ومتابعتها والإشراف عليها</li></ul>
+        <ul data-lang="en"><li>Establishing the self-evaluation team, assigning tasks, and building records</li><li>Creating, monitoring, and supervising improvement and development plans</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">يناير ٢٠١٨ — حتى الآن</span><span data-lang="en">January 2018 — Present</span></div>
+        <h3><span data-lang="ar">منسّق الإعلام</span><span data-lang="en">Media Coordinator</span></h3>
+        <div class="tl-org"><span data-lang="ar">المدرسة</span><span data-lang="en">School</span></div>
+        <ul data-lang="ar"><li>أعمال التصميم والتخطيط وتصميم منشورات وسائل التواصل</li><li>توثيق أعمال المدرسة وصناعة السجلات والمسابقات</li></ul>
+        <ul data-lang="en"><li>Design and planning work, producing social media publications</li><li>Documenting school activities and producing records and competitions</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">يناير ٢٠١٥ — حتى الآن</span><span data-lang="en">January 2015 — Present</span></div>
+        <h3><span data-lang="ar">منسّق التدريب</span><span data-lang="en">Training Coordinator</span></h3>
+        <div class="tl-org"><span data-lang="ar">المدرسة</span><span data-lang="en">School</span></div>
+        <ul data-lang="ar"><li>إدارة التطوير المهني وتنسيق أعمال المدربين</li><li>بناء البرامج وفق خطة تطوير المدرسة وتدريب المعلمين</li></ul>
+        <ul data-lang="en"><li>Managing professional development and coordinating trainers</li><li>Building programmes aligned with the school development plan and training teachers</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">يناير ٢٠١٥ — حتى الآن</span><span data-lang="en">January 2015 — Present</span></div>
+        <h3><span data-lang="ar">مشرف منصة مدرستي والدعم الفني</span><span data-lang="en">Madrasati Platform Supervisor & Technical Support</span></h3>
+        <div class="tl-org"><span data-lang="ar">المدرسة</span><span data-lang="en">School</span></div>
+        <ul data-lang="ar"><li>إدارة المنصة وحل مشكلات الطلاب والمعلمين ودعم التعليم الإلكتروني</li></ul>
+        <ul data-lang="en"><li>Managing the platform, resolving student and teacher issues, and supporting e-learning</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">عمل حر (مرخّص)</span><span data-lang="en">Freelance (Licensed)</span></div>
+        <h3><span data-lang="ar">مطوّر ومصمم برمجيات مستقل</span><span data-lang="en">Independent Software Developer & Designer</span></h3>
+        <div class="tl-org"><span data-lang="ar">ترخيص عمل حر — المملكة العربية السعودية</span><span data-lang="en">Saudi freelance work licence</span></div>
+        <ul data-lang="ar"><li>تصميم وبناء تطبيقات ويب عربية للقطاع التعليمي</li><li>تطوير متكامل من قاعدة البيانات إلى الواجهة، مع حزم التوزيع والتراخيص</li></ul>
+        <ul data-lang="en"><li>Designing and building Arabic-language web applications for the education sector</li><li>End-to-end development from database to interface, with distribution packaging and licensing</li></ul>
+      </div>
+  </div></div>
+</section>
+<section id="education">
+  <div class="section-head"><h2><span data-lang="ar">التعليم</span><span data-lang="en">Education</span></h2></div>
+  <div class="card"><div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">٢٠٢٥ — حتى الآن</span><span data-lang="en">2025 — Present</span></div>
+        <h3><span data-lang="ar">ماجستير العلوم في الأمن السيبراني</span><span data-lang="en">M.Sc. in Cybersecurity</span></h3>
+        <div class="tl-org"><span data-lang="ar">جامعة الباحة — كلية الحاسبات وتقنية المعلومات</span><span data-lang="en">Al-Baha University — College of Computing and Information Technology</span></div>
+        <ul data-lang="ar"><li>مسار الرسالة: كشف التسلل في إنترنت الأشياء باستخدام المحوّلات</li></ul>
+        <ul data-lang="en"><li>Thesis track: Transformer-based intrusion detection for IoT</li></ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date"><span data-lang="ar">٢٠٠٤ — ٢٠٠٧</span><span data-lang="en">2004 — 2007</span></div>
+        <h3><span data-lang="ar">بكالوريوس الحاسب الآلي التربوي</span><span data-lang="en">B.Sc. in Educational Computer Science</span></h3>
+        <div class="tl-org"><span data-lang="ar">جامعة أم القرى — كلية المعلمين بالقنفذة</span><span data-lang="en">Umm Al-Qura University — Teachers College, Al-Qunfudhah</span></div>
+        <ul data-lang="ar"><li>المعدل ٤٫٣٠ من ٥٫٠٠ — مرتبة الشرف الثانية</li></ul>
+        <ul data-lang="en"><li>GPA 4.30 / 5.00 — Second-Class Honours</li></ul>
+      </div>
+  </div></div>
+</section>
+<section id="stats">
+  <div class="section-head"><h2><span data-lang="ar">أرقام ومؤشرات</span><span data-lang="en">By the Numbers</span></h2></div>
+  <div class="stats">
+    <div class="stat"><div class="num"><span data-lang="ar">١٦</span><span data-lang="en">16</span></div><div class="lbl"><span data-lang="ar">سنة خبرة في التعليم</span><span data-lang="en">Years teaching</span></div></div>
+    <div class="stat"><div class="num"><span data-lang="ar">٦٢٩</span><span data-lang="en">629</span></div><div class="lbl"><span data-lang="ar">ساعة تدريب (متدرّب)</span><span data-lang="en">Training hours (trainee)</span></div></div>
+    <div class="stat"><div class="num"><span data-lang="ar">٥٠</span><span data-lang="en">50</span></div><div class="lbl"><span data-lang="ar">ساعة تدريب (مدرّب)</span><span data-lang="en">Training hours (trainer)</span></div></div>
+    <div class="stat"><div class="num"><span data-lang="ar">٢٤٧</span><span data-lang="en">247</span></div><div class="lbl"><span data-lang="ar">ساعة تدريب مباشر</span><span data-lang="en">Direct training hours</span></div></div>
+    <div class="stat"><div class="num"><span data-lang="ar">١٠٢</span><span data-lang="en">102</span></div><div class="lbl"><span data-lang="ar">ساعة تطوّع</span><span data-lang="en">Volunteer hours</span></div></div>
+  </div>
+</section>
+<section id="skills">
+  <div class="section-head"><h2><span data-lang="ar">المهارات</span><span data-lang="en">Skills</span></h2></div>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3 style="color:var(--primary);font-size:17px;margin-bottom:14px"><span data-lang="ar">المهارات التقنية</span><span data-lang="en">Technical Skills</span></h3>
+      <div class="skill-row"><b><span data-lang="ar">البرمجة</span><span data-lang="en">Programming</span></b><span data-lang="ar">Python · JavaScript · HTML · CSS</span><span data-lang="en">Python · JavaScript · HTML · CSS</span></div><div class="skill-row"><b><span data-lang="ar">تطوير الويب</span><span data-lang="en">Web Development</span></b><span data-lang="ar">Flask · SQLite · واجهات عربية RTL</span><span data-lang="en">Flask · SQLite · Arabic RTL interfaces</span></div><div class="skill-row"><b><span data-lang="ar">البيانات والتعلّم الآلي</span><span data-lang="en">Data & Machine Learning</span></b><span data-lang="ar">NumPy · SciPy · Matplotlib · Power BI</span><span data-lang="en">NumPy · SciPy · Matplotlib · Power BI</span></div><div class="skill-row"><b><span data-lang="ar">الأمن السيبراني</span><span data-lang="en">Cybersecurity</span></b><span data-lang="ar">IDS · التشفير التطبيقي · OS Security</span><span data-lang="en">IDS · Applied Cryptography · OS Security</span></div><div class="skill-row"><b><span data-lang="ar">الأدوات</span><span data-lang="en">Tools</span></b><span data-lang="ar">Git & GitHub · VS Code · Jupyter · LaTeX / Overleaf</span><span data-lang="en">Git & GitHub · VS Code · Jupyter · LaTeX / Overleaf</span></div>
+    </div>
+    <div class="card">
+      <h3 style="color:var(--primary);font-size:17px;margin-bottom:14px"><span data-lang="ar">الكفاءات الجوهرية</span><span data-lang="en">Core Competencies</span></h3>
+      <div class="tags">
+        <span class="tag"><span data-lang="ar">التخطيط الاستراتيجي</span><span data-lang="en">Strategic Planning</span></span>
+        <span class="tag"><span data-lang="ar">التدريب والتطوير المهني</span><span data-lang="en">Training & Professional Development</span></span>
+        <span class="tag"><span data-lang="ar">تصميم الجرافيك</span><span data-lang="en">Graphic Design</span></span>
+        <span class="tag"><span data-lang="ar">الرسوم المتحركة</span><span data-lang="en">Animation</span></span>
+        <span class="tag"><span data-lang="ar">التصوير الفوتوغرافي</span><span data-lang="en">Photography</span></span>
+        <span class="tag"><span data-lang="ar">تصوير ومونتاج الفيديو</span><span data-lang="en">Video Production</span></span>
+        <span class="tag"><span data-lang="ar">إدارة الفرق</span><span data-lang="en">Team Leadership</span></span>
+        <span class="tag"><span data-lang="ar">تحليل البيانات التعليمية</span><span data-lang="en">Educational Data Analysis</span></span>
+      </div>
+      <h3 style="color:var(--primary);font-size:17px;margin:20px 0 10px"><span data-lang="ar">اللغات</span><span data-lang="en">Languages</span></h3>
+      <ul class="clean-list">
+        <li><span data-lang="ar">العربية — اللغة الأم</span><span data-lang="en">Arabic — Native</span></li>
+        <li><span data-lang="ar">الإنجليزية — قراءة الأدبيات التقنية والأكاديمية</span><span data-lang="en">English — Technical &amp; academic reading</span></li>
+      </ul>
+      <h3 style="color:var(--primary);font-size:17px;margin:20px 0 10px"><span data-lang="ar">المعلومات الوظيفية</span><span data-lang="en">Professional Status</span></h3>
+      <ul class="clean-list">
+        <li><span data-lang="ar">الرخصة المهنية: معلم متقدّم</span><span data-lang="en">Professional licence: Advanced Teacher</span></li>
+        <li><span data-lang="ar">الرتبة: متقدّم</span><span data-lang="en">Rank: Advanced</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="certificates">
+  <div class="section-head"><h2><span data-lang="ar">شهادات الشكر والتقدير</span><span data-lang="en">Certificates of Appreciation</span></h2></div>
+  <div class="card"><ul class="clean-list">
+      <li><span data-lang="ar">شهادة شكر وتقدير كمنسّق للإعلام — ثلاث مرات على التوالي</span><span data-lang="en">Certificate of Appreciation as Media Coordinator — three consecutive times</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير كمنسّق للتدريب</span><span data-lang="en">Certificate of Appreciation as Training Coordinator</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — المجتمعات المهنية للمعلمين — أربع مرات على التوالي</span><span data-lang="en">Certificate of Appreciation — Teacher Professional Learning Communities — four consecutive times</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — المعلم المتميّز، مكتب التعليم بالمندق</span><span data-lang="en">Certificate of Appreciation — Distinguished Teacher, Al-Mandaq Education Office</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — مدرّب دورات الحاسب بنادي الحاسب</span><span data-lang="en">Certificate of Appreciation — Computer Club course trainer</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — ساعة برمجة، مرتين على التوالي</span><span data-lang="en">Certificate of Appreciation — Hour of Code, two consecutive times</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — الحوار الطلابي والسلوك الطلابي</span><span data-lang="en">Certificate of Appreciation — Student Dialogue and Student Conduct</span></li>
+      <li><span data-lang="ar">شهادة شكر وتقدير — معدّ برنامج التسامح والوعي الفكري</span><span data-lang="en">Certificate of Appreciation — Tolerance and Intellectual Awareness programme developer</span></li>
+  </ul></div>
+</section>
+
+<section id="contact">
+  <div class="section-head"><h2><span data-lang="ar">تواصل معي</span><span data-lang="en">Contact</span></h2></div>
+  <p class="section-lead"><span data-lang="ar">يسعدني التواصل بخصوص التعاون البحثي أو المشاريع البرمجية التعليمية.</span><span data-lang="en">I am glad to discuss research collaboration or educational software projects.</span></p>
+  <div class="contact-grid">
+    <div class="contact-item"><div class="lbl"><span data-lang="ar">البريد الجامعي</span><span data-lang="en">University Email</span></div><a href="mailto:447001014@stu.bu.edu.sa">447001014@stu.bu.edu.sa</a></div>
+    <div class="contact-item"><div class="lbl"><span data-lang="ar">البريد الشخصي</span><span data-lang="en">Personal Email</span></div><a href="mailto:al_ahm34@gmail.com">al_ahm34@gmail.com</a></div>
+    <div class="contact-item"><div class="lbl"><span data-lang="ar">الجوال</span><span data-lang="en">Phone</span></div><a href="tel:+966540413434">+966 54 041 3434</a></div>
+    <div class="contact-item"><div class="lbl"><span data-lang="ar">الموقع</span><span data-lang="en">Location</span></div><span><span data-lang="ar">الباحة — المملكة العربية السعودية</span><span data-lang="en">Al-Baha, Saudi Arabia</span></span></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3 style="color:var(--primary);font-size:17px;margin-bottom:10px"><span data-lang="ar">تحميل السيرة الذاتية</span><span data-lang="en">Download CV</span></h3>
+    <div class="hero-btns">
+      <a href="files/CV_Ahmed_AR.pdf" class="btn btn-primary"><span data-lang="ar">النسخة العربية (PDF)</span><span data-lang="en">Arabic (PDF)</span></a>
+      <a href="files/CV_Ahmed_EN.pdf" class="btn btn-primary"><span data-lang="ar">النسخة الإنجليزية (PDF)</span><span data-lang="en">English (PDF)</span></a>
+      <a href="files/CV_Ahmed_AR.docx" class="btn btn-primary" style="background:var(--bg-soft);color:var(--primary)"><span data-lang="ar">ملف Word عربي</span><span data-lang="en">Word (Arabic)</span></a>
+      <a href="files/CV_Ahmed_EN.docx" class="btn btn-primary" style="background:var(--bg-soft);color:var(--primary)"><span data-lang="ar">ملف Word إنجليزي</span><span data-lang="en">Word (English)</span></a>
+    </div>
+  </div>
+</section>
+
+<footer><span data-lang="ar">© ٢٠٢٦ أحمد عطية حسن الزهراني · جميع الحقوق محفوظة</span><span data-lang="en">© 2026 Ahmed Atiyah Hassan AL-Zahrani · All Rights Reserved</span></footer>
+</div>
+
+<script>
+(function(){
+  var KEY='ahmed_cv_lang';
+  function apply(l){
+    document.body.setAttribute('data-active',l);
+    document.body.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    document.documentElement.setAttribute('lang',l);
+    document.documentElement.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    var b=document.getElementById('langBtn');
+    if(b) b.textContent = (l==='ar') ? 'English' : 'العربية';
+    try{ localStorage.setItem(KEY,l); }catch(e){}
+  }
+  window.toggleLang=function(){
+    apply(document.body.getAttribute('data-active')==='ar'?'en':'ar');
+  };
+  apply('en');   // تُفتح الصفحة بالإنجليزية دائماً
+})();
+</script>
+</body>
+</html>
