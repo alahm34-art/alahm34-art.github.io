@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مبادرة مِرصاد | Mirsad Initiative</title>
+<meta name="description" content="مبادرة مِرصاد — من التخطيط الورقي إلى الرصد اللحظي لمؤشرات الأداء المدرسي.">
+<meta name="author" content="Ahmed Atiyah AL-Zahrani">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="مبادرة مِرصاد | Mirsad Initiative">
+<meta property="og:description" content="مبادرة مِرصاد — من التخطيط الورقي إلى الرصد اللحظي لمؤشرات الأداء المدرسي.">
+<meta name="theme-color" content="#1A4A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#1A4A3A;--primary-dark:#0F2D24;--primary-light:#2A6B5F;
+--accent:#D4A574;--accent-warm:#B88950;--bg-page:#F8F7F4;--bg-card:#FFF;--bg-soft:#EFF3F0;
+--text-strong:#1A1A1A;--text-body:#2C3E33;--text-muted:#5A6B68;
+--border-soft:#E5E7E3;--border-strong:#C8CFCA;--radius:14px;--shadow:0 2px 14px rgba(26,74,58,.07)}
+html{scroll-behavior:smooth}
+body{font-family:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg-page);
+color:var(--text-body);line-height:1.8;-webkit-font-smoothing:antialiased}
+body[dir="ltr"]{font-family:"Inter","Segoe UI",Arial,sans-serif}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+backdrop-filter:blur(8px);border-bottom:1px solid var(--border-soft)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.nav-brand{font-weight:700;color:var(--primary);font-size:16px;text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:15px;flex-wrap:wrap;margin-inline-start:auto;align-items:center}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:13.5px;font-weight:600;
+padding:4px 2px;border-bottom:2px solid transparent;transition:.15s}
+.nav-links a:hover{color:var(--primary);border-bottom-color:var(--accent)}
+.lang-btn{background:var(--primary);color:#fff!important;border:none;font-family:inherit;
+font-size:13px;font-weight:700;padding:6px 14px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.lang-btn:hover{background:var(--primary-dark)}
+.hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+color:#fff;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-60px;inset-inline-start:-60px;width:340px;height:340px;
+border-radius:50%;background:radial-gradient(circle,rgba(212,165,116,.16) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:1.2px;margin-bottom:10px}
+.hero h1{font-size:40px;font-weight:700;line-height:1.25;margin-bottom:10px}
+.hero .tagline{font-size:17px;color:#C4D6CE;margin-bottom:8px}
+.hero .sub{font-size:14.5px;color:#9FBAB0;margin-bottom:26px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:11px 24px;
+border-radius:10px;transition:.18s;font-family:inherit;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:var(--primary-dark)}
+.btn-primary:hover{background:var(--accent-warm)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--accent)}
+section{padding:44px 0 8px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.section-head::after{content:"";flex:1;height:1px;background:var(--border-strong)}
+.section-head h2{font-size:24px;color:var(--primary);font-weight:700;white-space:nowrap}
+.section-lead{color:var(--text-muted);font-size:15px;margin-bottom:22px;max-width:760px}
+.card{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px 22px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{background:var(--bg-soft);color:var(--primary);border:1px solid var(--border-strong);
+padding:6px 14px;border-radius:20px;font-size:13.5px;font-weight:600}
+.tag-accent{background:#FBF2E6;color:var(--accent-warm);border-color:#EBD9BE}
+.timeline{position:relative;padding-inline-start:26px}
+.timeline::before{content:"";position:absolute;inset-inline-start:6px;top:6px;bottom:6px;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;margin-bottom:22px}
+.tl-item::before{content:"";position:absolute;inset-inline-start:-26px;top:8px;width:12px;height:12px;
+border-radius:50%;background:var(--accent);border:2.5px solid var(--bg-page)}
+.tl-date{font-size:13px;color:var(--accent-warm);font-weight:700;margin-bottom:2px}
+.tl-item h3{font-size:16.5px;color:var(--text-strong);margin-bottom:2px}
+.tl-org{font-size:14px;color:var(--primary-light);font-weight:600;margin-bottom:6px}
+.tl-item ul{margin:6px 0 0;padding-inline-start:20px}
+.tl-item li{font-size:14px;margin-bottom:3px}
+.pcard{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.18s;
+text-decoration:none;color:inherit}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(26,74,58,.13);border-color:var(--accent)}
+.pcard .code{display:inline-block;background:var(--primary);color:#fff;font-size:11.5px;font-weight:700;
+padding:3px 10px;border-radius:6px;margin-bottom:10px;align-self:flex-start;letter-spacing:.5px}
+.pcard .code.soft{background:var(--accent);color:var(--primary-dark)}
+.pcard h3{font-size:16.5px;color:var(--text-strong);margin-bottom:6px;line-height:1.5}
+.pcard .instr{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.pcard p{font-size:14px;flex:1;margin-bottom:12px}
+.pcard .more{font-size:13.5px;color:var(--primary);font-weight:700}
+body[dir="rtl"] .pcard .more::after{content:" \2190"}
+body[dir="ltr"] .pcard .more::after{content:" \2192"}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.stat{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:18px;text-align:center;box-shadow:var(--shadow)}
+.stat .num{font-size:30px;font-weight:700;color:var(--primary);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--text-muted);margin-top:4px}
+.skill-row{margin-bottom:14px}
+.skill-row b{color:var(--primary);font-size:14.5px;display:block;margin-bottom:6px}
+.clean-list{list-style:none;padding:0}
+.clean-list li{padding:8px 0;border-bottom:1px solid var(--border-soft);font-size:14.5px}
+.clean-list li:last-child{border-bottom:none}
+.clean-list li::before{content:"\25B8";color:var(--accent);font-weight:700;margin-inline-end:8px}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.contact-item{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:16px;box-shadow:var(--shadow)}
+.contact-item .lbl{font-size:12.5px;color:var(--text-muted);margin-bottom:3px}
+.contact-item a,.contact-item span{color:var(--primary);font-weight:600;font-size:14.5px;
+text-decoration:none;word-break:break-all}
+.back{display:inline-block;margin:22px 0 0;color:var(--primary);font-weight:700;font-size:14.5px;text-decoration:none}
+.prose h3{color:var(--primary);font-size:18px;margin:22px 0 8px}
+.prose p{margin-bottom:12px;font-size:15px}
+.prose ul{padding-inline-start:22px;margin-bottom:12px}
+.prose li{margin-bottom:5px;font-size:14.5px}
+.callout{background:#FBF2E6;border:1px solid #EBD9BE;border-inline-start:4px solid var(--accent);
+border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14.5px}
+.callout b{color:var(--accent-warm)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--border-soft);padding:9px 12px;text-align:start}
+th{background:var(--bg-soft);color:var(--primary);font-weight:700}
+footer{margin-top:50px;padding:26px 0;border-top:1px solid var(--border-soft);
+text-align:center;color:var(--text-muted);font-size:13px}
+[data-lang]{display:none}
+body[data-active="ar"] [data-lang="ar"]{display:revert}
+body[data-active="en"] [data-lang="en"]{display:revert}
+@media(max-width:640px){.hero h1{font-size:28px}.nav-links{gap:10px}
+.nav-links a{font-size:12.5px}.section-head h2{font-size:20px}}
+@media print{.nav,.hero-btns,.back,.lang-btn{display:none}body{background:#fff}
+.card,.pcard,.stat{box-shadow:none;break-inside:avoid}}
+
+/* ================= MOBILE / الجوال ================= */
+@media (max-width: 700px){
+  html{-webkit-text-size-adjust:100%}
+  .container{padding:0 14px}
+
+  /* شريط التنقّل: تمرير أفقي بدل التفاف متعدّد الأسطر */
+  .nav-inner{padding:9px 12px;gap:10px;flex-wrap:nowrap;align-items:center}
+  .nav-brand{font-size:14.5px;flex:0 0 auto}
+  .nav-links{
+    margin-inline-start:auto;flex-wrap:nowrap;overflow-x:auto;gap:14px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    max-width:calc(100% - 110px);padding-bottom:2px;
+  }
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{font-size:13px;white-space:nowrap;flex:0 0 auto}
+  .lang-btn{position:sticky;inset-inline-end:0;flex:0 0 auto;
+    font-size:12px;padding:5px 11px;box-shadow:-6px 0 8px rgba(255,255,255,.9)}
+
+  /* الواجهة */
+  .hero{padding:34px 0 30px}
+  .hero h1{font-size:25px;line-height:1.3}
+  .hero .tagline{font-size:14.5px}
+  .hero .sub{font-size:13px;margin-bottom:20px}
+  .hero-eyebrow{font-size:11.5px;letter-spacing:.6px}
+  .hero-btns{gap:9px}
+  .btn{font-size:13.5px;padding:10px 18px;flex:1 1 auto;text-align:center}
+
+  /* الأقسام */
+  section{padding:30px 0 4px}
+  .section-head h2{font-size:19px}
+  .section-lead{font-size:14px}
+  .card{padding:16px 15px}
+  .pcard{padding:16px 15px}
+  .pcard h3{font-size:15.5px}
+  .pcard p{font-size:13.5px}
+  .grid{gap:13px}
+
+  /* الخط الزمني */
+  .timeline{padding-inline-start:20px}
+  .timeline::before{inset-inline-start:4px}
+  .tl-item::before{inset-inline-start:-20px;width:10px;height:10px}
+  .tl-item h3{font-size:15px}
+  .tl-item li{font-size:13.5px}
+
+  /* الأرقام */
+  .stats{grid-template-columns:repeat(2,1fr);gap:11px}
+  .stat{padding:14px 8px}
+  .stat .num{font-size:25px}
+  .stat .lbl{font-size:12.5px}
+
+  /* الوسوم والقوائم */
+  .tag{font-size:12.5px;padding:5px 12px}
+  .clean-list li{font-size:13.5px;padding:7px 0}
+  .skill-row{font-size:13.5px}
+
+  /* التواصل */
+  .contact-grid{grid-template-columns:1fr;gap:11px}
+  .contact-item a,.contact-item span{font-size:13.5px}
+
+  /* صفحات المشاريع */
+  .prose p{font-size:14px}
+  .prose li{font-size:13.5px}
+  .prose h3{font-size:16px}
+  .callout{padding:12px 14px;font-size:13.5px}
+
+  /* الجداول: تمرير أفقي بدل الانضغاط */
+  table{display:block;overflow-x:auto;white-space:nowrap;
+    -webkit-overflow-scrolling:touch;font-size:13px}
+  th,td{padding:8px 10px}
+
+  footer{font-size:12px;padding:20px 0}
+}
+
+@media (max-width: 380px){
+  .hero h1{font-size:22px}
+  .stats{grid-template-columns:1fr}
+  .section-head h2{font-size:17.5px}
+}
+
+
+section[id]{scroll-margin-top:66px}
+</style>
+</head>
+<body dir="ltr" data-active="en">
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><span data-lang="ar">أحمد الزهراني</span><span data-lang="en">Ahmed AL-Zahrani</span></a>
+    <div class="nav-links">
+      <a href="../index.html#courses"><span data-lang="ar">مقررات الماجستير</span><span data-lang="en">Coursework</span></a>
+      <a href="../index.html#projects"><span data-lang="ar">مشاريعي</span><span data-lang="en">Projects</span></a>
+      <a href="../index.html#initiatives"><span data-lang="ar">مبادراتي</span><span data-lang="en">Initiatives</span></a>
+      <a href="../index.html#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">العربية</button>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="container">
+    <div class="hero-eyebrow"><span data-lang="ar">مبادرة مدرسية · الخطة التشغيلية ومؤشرات الأداء</span><span data-lang="en">School Initiative · Operational Planning &amp; Performance Indicators</span></div>
+    <h1><span data-lang="ar">مبادرة مِرصاد</span><span data-lang="en">Mirsad Initiative</span></h1>
+    <p class="tagline"><span data-lang="ar">مرصد مؤشرات الأداء ومواءمة الخطة التشغيلية بالتقويم الخارجي</span><span data-lang="en">A performance-indicator observatory aligning the operational plan with external assessment</span></p>
+    <p class="sub"><span data-lang="ar">إعداد وتنفيذ: أحمد عطية الزهراني — منسّق التدريب ومشرف منصة مدرستي · ١٤٤٨هـ</span><span data-lang="en">Designed and implemented by Ahmed Atiyah AL-Zahrani — Training Coordinator &amp; Madrasati Supervisor · 1448 AH</span></p>
+  </div>
+</header>
+
+<div class="container">
+<section>
+  <div class="prose">
+<div data-lang="ar">
+    <h3>الفكرة الجوهرية</h3>
+    <p>تعالج مبادرة «مِرصاد» الفجوة القائمة بين الخطة التشغيلية المكتوبة وبين مؤشرات التقويم الخارجي
+    (نافس · التحصيلي · القدرات)، عبر أداة تقنية لامركزية تعمل دون إنترنت داخل المدرسة، تربط كل هدف
+    تشغيلي بمؤشره وخط أساسه ومستهدفه، وتحوّل المتابعة من تقارير تُكتب آخر العام إلى رصدٍ لحظي
+    يقيس أثر كل برنامج على المؤشر الذي أُنشئ لأجله.</p>
+
+    <div class="callout"><b>السؤال المحوري:</b> كيف نحوّل الخطة التشغيلية من وثيقة تُحفظ
+    إلى نظام يُدار ويُقاس أثره على مؤشرات التقويم الخارجي؟</div>
+
+    <h3>الركائز الابتكارية</h3>
+    <ul>
+      <li><b>هندسة خط الأساس:</b> كل هدف يُبنى على قياس فعلي لا على تقدير — العدد الإجمالي والنسبة
+      الحالية والمستهدفة، فيُحتسب المستهدف عدداً لا وصفاً.</li>
+      <li><b>التوازن الإلزامي:</b> مجموع مستهدفي البرامج يجب أن يساوي مستهدف الهدف، ويرفض النظام
+      أي اختلال ويشير إلى موضعه بالاسم.</li>
+      <li><b>الشاهد المرقمن:</b> رمز QR لكل برنامج يفتح مجلد شواهده مباشرةً، فينتقل التوثيق من
+      الورق إلى السحابة بنقرة واحدة.</li>
+      <li><b>الحوكمة وإدارة المخاطر:</b> سجل مخاطر لكل برنامج بمستواه وإجراءات الحد منه ومتطلبات
+      الالتزام، يدعم الهدف الاستراتيجي العاشر للوزارة.</li>
+    </ul>
+
+    <h3>هندسة المشكلة — من العَرَض إلى الجذر</h3>
+    <ul>
+      <li><b>العَرَض الظاهر:</b> تباين بين نتائج التقويم المدرسي ونتائج الاختبارات الوطنية، وخطة
+      تشغيلية تُعتمد ثم لا تُتابع.</li>
+      <li><b>السبب المباشر:</b> الخطة تُبنى في ملف منفصل عن أدوات القياس، فتُكتب الأهداف بصياغة
+      عامة بلا خط أساس ولا مستهدف رقمي.</li>
+      <li><b>السبب الجذري:</b> غياب أداة تربط الهدف بمؤشره وبرامجه وشواهده في مكان واحد، وتفرض
+      التوازن بين المستهدف ومجموع البرامج.</li>
+      <li><b>المعالجة:</b> أداة لامركزية تفرض منهجية الورشة وتقيس الأثر لحظياً وتوثّق الشواهد رقمياً.</li>
+    </ul>
+
+    <h3>مؤشرات الأداء الاستراتيجية</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>مؤشر الأداء</th><th>خط الأساس</th><th>المستهدف</th><th>أداة القياس</th><th>الدورية</th></tr>
+      <tr><td>الأهداف المرتبطة بمؤشر تقويم خارجي</td><td>٤٥٪</td><td>١٠٠٪</td><td>فحص جودة الخطة</td><td>فصلي</td></tr>
+      <tr><td>الأهداف متوازنة التوزيع</td><td>٦٠٪</td><td>١٠٠٪</td><td>تقرير التوازن الآلي</td><td>فصلي</td></tr>
+      <tr><td>البرامج الموثّقة بشواهد رقمية</td><td>٣٠٪</td><td>٩٠٪</td><td>عدّاد روابط الشواهد</td><td>شهري</td></tr>
+      <tr><td>البرامج ذات سجل مخاطر مكتمل</td><td>٠٪</td><td>١٠٠٪</td><td>سجل المخاطر والالتزام</td><td>فصلي</td></tr>
+      <tr><td>زمن إعداد التقرير الختامي</td><td>٥ أيام</td><td>أقل من ساعة</td><td>قياس زمني مباشر</td><td>سنوي</td></tr>
+      <tr><td>اجتياز نافس — رياضيات</td><td>٥١٪</td><td>٧٥٪</td><td>نتائج الاختبار الوطني</td><td>سنوي</td></tr>
+      <tr><td>متوسط الاختبار التحصيلي</td><td>٦٠٪</td><td>٨٠٪</td><td>نتائج الاختبار الوطني</td><td>سنوي</td></tr>
+    </table>
+    </div>
+
+    <h3>الأداة التقنية من الداخل</h3>
+    <ul>
+      <li><b>لوحة القيادة:</b> ستة مؤشرات رئيسية تُحتسب آلياً من البيانات لا تُدخل يدوياً — الإنجاز العام،
+      الإجراءات المنجزة، المستهدفون، الشواهد، التوازن، والإنجاز حسب المجال.</li>
+      <li><b>الإنجاز حسب المجال:</b> أشرطة مرتّبة تنازلياً تكشف المجال المتعثّر فوراً.</li>
+      <li><b>فحص جودة الخطة:</b> أكثر من عشرين معياراً تغطي الرؤية والرسالة ولجنة التميز وتحليل سوات
+      وصياغة الأهداف وخط الأساس والتوازن والشواهد والمنفّذين.</li>
+      <li><b>معالجة موجّهة:</b> كل مخالفة تحمل اسم الهدف أو البرنامج ورابط «فتح ومعالجة» ينقل المستخدم
+      إليه مباشرةً، مع درجة مطابقة رقمية تُحسب آلياً.</li>
+    </ul>
+
+    <h3>دورة حياة المبادرة</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>المرحلة</th><th>التوقيت</th><th>الأعمال</th></tr>
+      <tr><td>التهيئة والتأسيس</td><td>الأسبوع ١–٤</td><td>تنصيب الأداة، إدخال بيانات المدرسة والكادر، تدريب فريق التميز</td></tr>
+      <tr><td>البناء والمواءمة</td><td>الأسبوع ٥–٩</td><td>تحليل سوات، صياغة الأهداف بخط أساس ومستهدف، الربط بالأهداف الاستراتيجية</td></tr>
+      <tr><td>التنفيذ والرصد</td><td>الفصلان</td><td>تنفيذ البرامج، توثيق الشواهد عبر QR، رصد الانحراف مبكراً</td></tr>
+      <tr><td>القياس والتحسين</td><td>نهاية العام</td><td>قياس المؤشرات ومقارنتها بخط الأساس، قرار استدامة كل برنامج</td></tr>
+    </table>
+    </div>
+
+    <h3>المواءمة الوطنية</h3>
+    <p>تنحدر المبادرة من <b>رؤية المملكة ٢٠٣٠</b> عبر برنامج تنمية القدرات البشرية، إلى الأهداف
+    الاستراتيجية للوزارة (تحسين أداء المدارس · الاستثمار في الطلاب · تعزيز الحوكمة وإدارة المخاطر)،
+    ثم إلى دليل الخطة التشغيلية المدرسية بمجالاته الستة. وكل هدف في النظام يحمل حقلاً إلزامياً
+    للهدف الاستراتيجي، ويرفض فحص الجودة أي هدف غير مرتبط.</p>
+
+    <h3>الأثر المستهدف</h3>
+    <ul>
+      <li><b>١٠٠٪</b> ربط الأهداف بمؤشرات التقويم الخارجي</li>
+      <li><b>صفر</b> مخالفات في فحص جودة الخطة</li>
+      <li><b>٧٥٪</b> اختصار زمن إعداد التقارير</li>
+      <li><b>١٦</b> برنامجاً بسجل مخاطر موثّق</li>
+    </ul>
+ </div>
+<div data-lang="en">
+    <h3>Core Idea</h3>
+    <p>The Mirsad initiative addresses the gap between the written operational plan and external
+    assessment indicators (Nafis, Achievement, and Aptitude tests), through a decentralised tool that
+    runs offline inside the school. It links every operational goal to its indicator, baseline, and target,
+    turning follow-up from year-end reports into live monitoring that measures each programme's impact
+    on the indicator it was created for.</p>
+
+    <div class="callout"><b>Central question:</b> how do we turn the operational plan from a document
+    that is filed away into a system that is managed, with its impact on external assessment indicators measured?</div>
+
+    <h3>Innovative Pillars</h3>
+    <ul>
+      <li><b>Baseline engineering:</b> every goal is built on an actual measurement rather than an estimate —
+      total count, current percentage, and target — so the target is computed as a number, not described in words.</li>
+      <li><b>Mandatory balance:</b> the sum of programme targets must equal the goal's target; the system
+      rejects any imbalance and names exactly where it occurs.</li>
+      <li><b>Digitised evidence:</b> a QR code for each programme opens its evidence folder directly, moving
+      documentation from paper to cloud in one tap.</li>
+      <li><b>Governance and risk management:</b> a risk register for each programme with its level, mitigation
+      actions, and compliance requirements, supporting the Ministry's tenth strategic goal.</li>
+    </ul>
+
+    <h3>Problem Engineering — From Symptom to Root Cause</h3>
+    <ul>
+      <li><b>Visible symptom:</b> a divergence between school assessment results and national test results,
+      and an operational plan that is approved but never followed up.</li>
+      <li><b>Immediate cause:</b> the plan is built in a file separate from measurement tools, so goals are
+      written in general terms without a baseline or a numeric target.</li>
+      <li><b>Root cause:</b> the absence of a tool that links a goal to its indicator, programmes, and evidence
+      in one place, and that enforces balance between the target and the sum of its programmes.</li>
+      <li><b>Treatment:</b> a decentralised tool that enforces the workshop methodology, measures impact live,
+      and documents evidence digitally.</li>
+    </ul>
+
+    <h3>Strategic Performance Indicators</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>Indicator</th><th>Baseline</th><th>Target</th><th>Measurement tool</th><th>Frequency</th></tr>
+      <tr><td>Goals linked to an external assessment indicator</td><td>45%</td><td>100%</td><td>Plan quality check</td><td>Per term</td></tr>
+      <tr><td>Goals with balanced distribution</td><td>60%</td><td>100%</td><td>Automated balance report</td><td>Per term</td></tr>
+      <tr><td>Programmes documented with digital evidence</td><td>30%</td><td>90%</td><td>Evidence link counter</td><td>Monthly</td></tr>
+      <tr><td>Programmes with a complete risk register</td><td>0%</td><td>100%</td><td>Risk and compliance register</td><td>Per term</td></tr>
+      <tr><td>Time to produce the final report</td><td>5 days</td><td>Under 1 hour</td><td>Direct time measurement</td><td>Annual</td></tr>
+      <tr><td>Nafis pass rate — Mathematics</td><td>51%</td><td>75%</td><td>National test results</td><td>Annual</td></tr>
+      <tr><td>Achievement test average</td><td>60%</td><td>80%</td><td>National test results</td><td>Annual</td></tr>
+    </table>
+    </div>
+
+    <h3>Inside the Tool</h3>
+    <ul>
+      <li><b>Dashboard:</b> six headline indicators computed automatically from the data rather than entered
+      manually — overall completion, completed actions, beneficiaries, evidence, balance, and completion by domain.</li>
+      <li><b>Completion by domain:</b> bars sorted in descending order that expose the lagging domain immediately.</li>
+      <li><b>Plan quality check:</b> over twenty criteria covering vision and mission, the excellence committee,
+      SWOT analysis, goal formulation, baselines, balance, evidence, and implementers.</li>
+      <li><b>Guided remediation:</b> every finding carries the name of the offending goal or programme and an
+      "open and fix" link that takes the user straight to it, with an automatically computed compliance score.</li>
+    </ul>
+
+    <h3>Initiative Lifecycle</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>Phase</th><th>Timing</th><th>Activities</th></tr>
+      <tr><td>Setup and foundation</td><td>Weeks 1–4</td><td>Install the tool, enter school and staff data, train the excellence team</td></tr>
+      <tr><td>Building and alignment</td><td>Weeks 5–9</td><td>SWOT analysis, goal formulation with baseline and target, linking to strategic goals</td></tr>
+      <tr><td>Execution and monitoring</td><td>Both terms</td><td>Run programmes, document evidence via QR, detect deviation early</td></tr>
+      <tr><td>Measurement and improvement</td><td>Year end</td><td>Measure indicators against baseline, decide on each programme's continuation</td></tr>
+    </table>
+    </div>
+
+    <h3>National Alignment</h3>
+    <p>The initiative descends from <b>Saudi Vision 2030</b> through the Human Capability Development
+    Programme, to the Ministry's strategic goals (improving school performance, investing in students,
+    strengthening governance and risk management), then to the school operational planning guide with its
+    six domains. Every goal in the system carries a mandatory strategic-goal field, and the quality check
+    rejects any goal that is not linked.</p>
+
+    <h3>Target Impact</h3>
+    <ul>
+      <li><b>100%</b> of goals linked to external assessment indicators</li>
+      <li><b>Zero</b> findings in the plan quality check</li>
+      <li><b>75%</b> reduction in report preparation time</li>
+      <li><b>16</b> programmes with a documented risk register</li>
+    </ul>
+ </div>
+  </div>
+  <a href="../index.html" class="back"><span data-lang="ar">→ العودة إلى السيرة الذاتية</span><span data-lang="en">← Back to CV</span></a>
+</section>
+<footer><span data-lang="ar">© ٢٠٢٦ أحمد عطية حسن الزهراني</span><span data-lang="en">© 2026 Ahmed Atiyah Hassan AL-Zahrani</span></footer>
+</div>
+
+<script>
+(function(){
+  var KEY='ahmed_cv_lang';
+  function apply(l){
+    document.body.setAttribute('data-active',l);
+    document.body.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    document.documentElement.setAttribute('lang',l);
+    document.documentElement.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    var b=document.getElementById('langBtn');
+    if(b) b.textContent = (l==='ar') ? 'English' : 'العربية';
+    try{ localStorage.setItem(KEY,l); }catch(e){}
+  }
+  window.toggleLang=function(){
+    apply(document.body.getAttribute('data-active')==='ar'?'en':'ar');
+  };
+  apply('en');   // تُفتح الصفحة بالإنجليزية دائماً
+})();
+</script>
+</body>
+</html>

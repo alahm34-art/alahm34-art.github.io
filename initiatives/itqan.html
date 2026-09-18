@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مبادرة إتقان | Itqan Initiative</title>
+<meta name="description" content="مبادرة إتقان — أداة تعليمية لامركزية تعالج التبخّر المعرفي وتستثمر رأس المال الطلابي.">
+<meta name="author" content="Ahmed Atiyah AL-Zahrani">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="مبادرة إتقان | Itqan Initiative">
+<meta property="og:description" content="مبادرة إتقان — أداة تعليمية لامركزية تعالج التبخّر المعرفي وتستثمر رأس المال الطلابي.">
+<meta name="theme-color" content="#1A4A3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#1A4A3A;--primary-dark:#0F2D24;--primary-light:#2A6B5F;
+--accent:#D4A574;--accent-warm:#B88950;--bg-page:#F8F7F4;--bg-card:#FFF;--bg-soft:#EFF3F0;
+--text-strong:#1A1A1A;--text-body:#2C3E33;--text-muted:#5A6B68;
+--border-soft:#E5E7E3;--border-strong:#C8CFCA;--radius:14px;--shadow:0 2px 14px rgba(26,74,58,.07)}
+html{scroll-behavior:smooth}
+body{font-family:"Cairo","Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg-page);
+color:var(--text-body);line-height:1.8;-webkit-font-smoothing:antialiased}
+body[dir="ltr"]{font-family:"Inter","Segoe UI",Arial,sans-serif}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+backdrop-filter:blur(8px);border-bottom:1px solid var(--border-soft)}
+.nav-inner{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.nav-brand{font-weight:700;color:var(--primary);font-size:16px;text-decoration:none;white-space:nowrap}
+.nav-links{display:flex;gap:15px;flex-wrap:wrap;margin-inline-start:auto;align-items:center}
+.nav-links a{color:var(--text-muted);text-decoration:none;font-size:13.5px;font-weight:600;
+padding:4px 2px;border-bottom:2px solid transparent;transition:.15s}
+.nav-links a:hover{color:var(--primary);border-bottom-color:var(--accent)}
+.lang-btn{background:var(--primary);color:#fff!important;border:none;font-family:inherit;
+font-size:13px;font-weight:700;padding:6px 14px;border-radius:8px;cursor:pointer;white-space:nowrap}
+.lang-btn:hover{background:var(--primary-dark)}
+.hero{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+color:#fff;padding:56px 0 48px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-60px;inset-inline-start:-60px;width:340px;height:340px;
+border-radius:50%;background:radial-gradient(circle,rgba(212,165,116,.16) 0%,transparent 70%);pointer-events:none}
+.hero-eyebrow{color:var(--accent);font-size:13px;font-weight:700;letter-spacing:1.2px;margin-bottom:10px}
+.hero h1{font-size:40px;font-weight:700;line-height:1.25;margin-bottom:10px}
+.hero .tagline{font-size:17px;color:#C4D6CE;margin-bottom:8px}
+.hero .sub{font-size:14.5px;color:#9FBAB0;margin-bottom:26px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:11px 24px;
+border-radius:10px;transition:.18s;font-family:inherit;cursor:pointer;border:none}
+.btn-primary{background:var(--accent);color:var(--primary-dark)}
+.btn-primary:hover{background:var(--accent-warm)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.45)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:var(--accent)}
+section{padding:44px 0 8px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.section-head::after{content:"";flex:1;height:1px;background:var(--border-strong)}
+.section-head h2{font-size:24px;color:var(--primary);font-weight:700;white-space:nowrap}
+.section-lead{color:var(--text-muted);font-size:15px;margin-bottom:22px;max-width:760px}
+.card{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px 22px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{background:var(--bg-soft);color:var(--primary);border:1px solid var(--border-strong);
+padding:6px 14px;border-radius:20px;font-size:13.5px;font-weight:600}
+.tag-accent{background:#FBF2E6;color:var(--accent-warm);border-color:#EBD9BE}
+.timeline{position:relative;padding-inline-start:26px}
+.timeline::before{content:"";position:absolute;inset-inline-start:6px;top:6px;bottom:6px;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;margin-bottom:22px}
+.tl-item::before{content:"";position:absolute;inset-inline-start:-26px;top:8px;width:12px;height:12px;
+border-radius:50%;background:var(--accent);border:2.5px solid var(--bg-page)}
+.tl-date{font-size:13px;color:var(--accent-warm);font-weight:700;margin-bottom:2px}
+.tl-item h3{font-size:16.5px;color:var(--text-strong);margin-bottom:2px}
+.tl-org{font-size:14px;color:var(--primary-light);font-weight:600;margin-bottom:6px}
+.tl-item ul{margin:6px 0 0;padding-inline-start:20px}
+.tl-item li{font-size:14px;margin-bottom:3px}
+.pcard{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:20px;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.18s;
+text-decoration:none;color:inherit}
+.pcard:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(26,74,58,.13);border-color:var(--accent)}
+.pcard .code{display:inline-block;background:var(--primary);color:#fff;font-size:11.5px;font-weight:700;
+padding:3px 10px;border-radius:6px;margin-bottom:10px;align-self:flex-start;letter-spacing:.5px}
+.pcard .code.soft{background:var(--accent);color:var(--primary-dark)}
+.pcard h3{font-size:16.5px;color:var(--text-strong);margin-bottom:6px;line-height:1.5}
+.pcard .instr{font-size:13px;color:var(--text-muted);margin-bottom:8px}
+.pcard p{font-size:14px;flex:1;margin-bottom:12px}
+.pcard .more{font-size:13.5px;color:var(--primary);font-weight:700}
+body[dir="rtl"] .pcard .more::after{content:" \2190"}
+body[dir="ltr"] .pcard .more::after{content:" \2192"}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.stat{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:18px;text-align:center;box-shadow:var(--shadow)}
+.stat .num{font-size:30px;font-weight:700;color:var(--primary);line-height:1.2}
+.stat .lbl{font-size:13.5px;color:var(--text-muted);margin-top:4px}
+.skill-row{margin-bottom:14px}
+.skill-row b{color:var(--primary);font-size:14.5px;display:block;margin-bottom:6px}
+.clean-list{list-style:none;padding:0}
+.clean-list li{padding:8px 0;border-bottom:1px solid var(--border-soft);font-size:14.5px}
+.clean-list li:last-child{border-bottom:none}
+.clean-list li::before{content:"\25B8";color:var(--accent);font-weight:700;margin-inline-end:8px}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.contact-item{background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--radius);
+padding:16px;box-shadow:var(--shadow)}
+.contact-item .lbl{font-size:12.5px;color:var(--text-muted);margin-bottom:3px}
+.contact-item a,.contact-item span{color:var(--primary);font-weight:600;font-size:14.5px;
+text-decoration:none;word-break:break-all}
+.back{display:inline-block;margin:22px 0 0;color:var(--primary);font-weight:700;font-size:14.5px;text-decoration:none}
+.prose h3{color:var(--primary);font-size:18px;margin:22px 0 8px}
+.prose p{margin-bottom:12px;font-size:15px}
+.prose ul{padding-inline-start:22px;margin-bottom:12px}
+.prose li{margin-bottom:5px;font-size:14.5px}
+.callout{background:#FBF2E6;border:1px solid #EBD9BE;border-inline-start:4px solid var(--accent);
+border-radius:10px;padding:14px 18px;margin:16px 0;font-size:14.5px}
+.callout b{color:var(--accent-warm)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--border-soft);padding:9px 12px;text-align:start}
+th{background:var(--bg-soft);color:var(--primary);font-weight:700}
+footer{margin-top:50px;padding:26px 0;border-top:1px solid var(--border-soft);
+text-align:center;color:var(--text-muted);font-size:13px}
+[data-lang]{display:none}
+body[data-active="ar"] [data-lang="ar"]{display:revert}
+body[data-active="en"] [data-lang="en"]{display:revert}
+@media(max-width:640px){.hero h1{font-size:28px}.nav-links{gap:10px}
+.nav-links a{font-size:12.5px}.section-head h2{font-size:20px}}
+@media print{.nav,.hero-btns,.back,.lang-btn{display:none}body{background:#fff}
+.card,.pcard,.stat{box-shadow:none;break-inside:avoid}}
+
+/* ================= MOBILE / الجوال ================= */
+@media (max-width: 700px){
+  html{-webkit-text-size-adjust:100%}
+  .container{padding:0 14px}
+
+  /* شريط التنقّل: تمرير أفقي بدل التفاف متعدّد الأسطر */
+  .nav-inner{padding:9px 12px;gap:10px;flex-wrap:nowrap;align-items:center}
+  .nav-brand{font-size:14.5px;flex:0 0 auto}
+  .nav-links{
+    margin-inline-start:auto;flex-wrap:nowrap;overflow-x:auto;gap:14px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+    max-width:calc(100% - 110px);padding-bottom:2px;
+  }
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav-links a{font-size:13px;white-space:nowrap;flex:0 0 auto}
+  .lang-btn{position:sticky;inset-inline-end:0;flex:0 0 auto;
+    font-size:12px;padding:5px 11px;box-shadow:-6px 0 8px rgba(255,255,255,.9)}
+
+  /* الواجهة */
+  .hero{padding:34px 0 30px}
+  .hero h1{font-size:25px;line-height:1.3}
+  .hero .tagline{font-size:14.5px}
+  .hero .sub{font-size:13px;margin-bottom:20px}
+  .hero-eyebrow{font-size:11.5px;letter-spacing:.6px}
+  .hero-btns{gap:9px}
+  .btn{font-size:13.5px;padding:10px 18px;flex:1 1 auto;text-align:center}
+
+  /* الأقسام */
+  section{padding:30px 0 4px}
+  .section-head h2{font-size:19px}
+  .section-lead{font-size:14px}
+  .card{padding:16px 15px}
+  .pcard{padding:16px 15px}
+  .pcard h3{font-size:15.5px}
+  .pcard p{font-size:13.5px}
+  .grid{gap:13px}
+
+  /* الخط الزمني */
+  .timeline{padding-inline-start:20px}
+  .timeline::before{inset-inline-start:4px}
+  .tl-item::before{inset-inline-start:-20px;width:10px;height:10px}
+  .tl-item h3{font-size:15px}
+  .tl-item li{font-size:13.5px}
+
+  /* الأرقام */
+  .stats{grid-template-columns:repeat(2,1fr);gap:11px}
+  .stat{padding:14px 8px}
+  .stat .num{font-size:25px}
+  .stat .lbl{font-size:12.5px}
+
+  /* الوسوم والقوائم */
+  .tag{font-size:12.5px;padding:5px 12px}
+  .clean-list li{font-size:13.5px;padding:7px 0}
+  .skill-row{font-size:13.5px}
+
+  /* التواصل */
+  .contact-grid{grid-template-columns:1fr;gap:11px}
+  .contact-item a,.contact-item span{font-size:13.5px}
+
+  /* صفحات المشاريع */
+  .prose p{font-size:14px}
+  .prose li{font-size:13.5px}
+  .prose h3{font-size:16px}
+  .callout{padding:12px 14px;font-size:13.5px}
+
+  /* الجداول: تمرير أفقي بدل الانضغاط */
+  table{display:block;overflow-x:auto;white-space:nowrap;
+    -webkit-overflow-scrolling:touch;font-size:13px}
+  th,td{padding:8px 10px}
+
+  footer{font-size:12px;padding:20px 0}
+}
+
+@media (max-width: 380px){
+  .hero h1{font-size:22px}
+  .stats{grid-template-columns:1fr}
+  .section-head h2{font-size:17.5px}
+}
+
+
+section[id]{scroll-margin-top:66px}
+</style>
+</head>
+<body dir="ltr" data-active="en">
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand"><span data-lang="ar">أحمد الزهراني</span><span data-lang="en">Ahmed AL-Zahrani</span></a>
+    <div class="nav-links">
+      <a href="../index.html#courses"><span data-lang="ar">مقررات الماجستير</span><span data-lang="en">Coursework</span></a>
+      <a href="../index.html#projects"><span data-lang="ar">مشاريعي</span><span data-lang="en">Projects</span></a>
+      <a href="../index.html#initiatives"><span data-lang="ar">مبادراتي</span><span data-lang="en">Initiatives</span></a>
+      <a href="../index.html#contact"><span data-lang="ar">تواصل</span><span data-lang="en">Contact</span></a>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">العربية</button>
+    </div>
+  </div>
+</nav>
+<header class="hero">
+  <div class="container">
+    <div class="hero-eyebrow"><span data-lang="ar">مبادرة مدرسية · استدامة التعلّم والتمكين الطلابي</span><span data-lang="en">School Initiative · Learning Retention &amp; Student Empowerment</span></div>
+    <h1><span data-lang="ar">مبادرة إتقان</span><span data-lang="en">Itqan Initiative</span></h1>
+    <p class="tagline"><span data-lang="ar">معالجة فجوة التبخّر المعرفي عبر التكرار المتباعد والتعلّم بالأقران</span><span data-lang="en">Closing the knowledge-decay gap through spaced repetition and peer learning</span></p>
+    <p class="sub"><span data-lang="ar">متوسطة وثانوية الجوفاء · ١٤٤٧هـ</span><span data-lang="en">Al-Jawfaa Intermediate &amp; Secondary School · 1447 AH</span></p>
+  </div>
+</header>
+
+<div class="container">
+<section>
+  <div class="prose">
+<div data-lang="ar">
+    <h3>الفكرة الجوهرية</h3>
+    <p>تقدّم مبادرة «إتقان» أداة تعليمية لامركزية صُمّمت هندسياً لمعالجة فجوة <b>التبخّر المعرفي</b>
+    وتقليص التباين بين التقييم المدرسي ونتائج الاختبارات المعيارية (القدرات والتحصيلي). تعتمد الأداة
+    على خوارزميات <b>التكرار المتباعد</b> لمرافقة الطالب على مدار ثلاث سنوات، بما يضمن انتقال المعرفة
+    التأسيسية من الذاكرة المؤقتة إلى الذاكرة طويلة المدى وجاهزيتها للاستدعاء الفوري الموثوق.</p>
+
+    <h3>الركائز الابتكارية</h3>
+    <ul>
+      <li><b>حوكمة الإنتاج المعرفي عبر التلعيب:</b> كسر احتكار المعلم للمعلومة بتحويل الطالب من مستهلك
+      سلبي إلى صانع محتوى تنافسي، ضمن إطار مؤسسي يخضع لفلترة لجان تحكيم متخصصة.</li>
+      <li><b>السيادة على البيانات والأمن النفسي:</b> بنية تحتية تعمل دون اتصال (Offline-First) مع تشفير
+      البيانات التحصيلية محلياً عبر الترميز المستعار، بما يحمي الخصوصية الرقمية والأمن النفسي للمتعثّرين.</li>
+      <li><b>التمكين القيادي المتمايز:</b> مسح تشخيصي يفرز نخبة الطلاب إلى قادة شموليين وخبراء تخصصيين،
+      لإدارة عجلة التعلّم بالأقران ونقل أثر التعلّم بفاعلية.</li>
+    </ul>
+
+    <h3>هندسة المشكلة التربوية</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>البُعد</th><th>التشخيص</th></tr>
+      <tr><td>الجملة التشخيصية</td><td>الفجوة المعيارية العميقة بين التقييم المدرسي المرتفع ونتائج اختبارات قياس المتدنية، تنتج عن القصور في استدامة المعرفة عبر التكرار المتباعد، والإهدار الجسيم للطاقات القيادية للطلاب المتميزين.</td></tr>
+      <tr><td>الحجم الكمي</td><td>تُظهر بيانات البحث الإجرائي أن أكثر من <b>٤٠٪</b> من الطلاب يفقدون بناءهم المعرفي التأسيسي بعد تجاوز الصف الدراسي، ما يضرب الجاهزية التراكمية ويعوق مستهدفات الجودة التعليمية.</td></tr>
+      <tr><td>الأسباب الجذرية</td><td>غياب النظم الرقمية المجدولة للمراجعة، وإهدار رأس المال المعرفي الطلابي — إذ يغادر الموهوبون المدرسة دون استثمار كفاءاتهم لرفع مستوى أقرانهم المتعثّرين، ما يُعطّل التعلّم بالأقران ويُبقي المعلم عنق زجاجة وحيداً للمعرفة.</td></tr>
+      <tr><td>الأثر المتوقّع عند الإهمال</td><td>انكماش فرص القبول الجامعي النوعي، وتراجع التصنيف المعياري للمدرسة في مؤشرات الأداء الخارجي.</td></tr>
+    </table>
+    </div>
+
+    <h3>مؤشرات الأداء الاستراتيجية</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>الهدف الإجرائي</th><th>مؤشر الأداء</th><th>أداة القياس المرجعي</th><th>المستهدف الزمني</th></tr>
+      <tr><td>محاكاة القياس المعياري الدولي والوطني</td><td>إنجاز وحلّ حزم المراجعة الشاملة داخل الأداة</td><td>لوحة القيادة السحابية للمشروع</td><td>اجتياز ٨٠٪ من الحزم المخصّصة للقياس</td></tr>
+      <tr><td>حوكمة المحتوى التشاركي</td><td>عدد الحزم المعرفية المجازة والمحكّمة من لجان التخصص</td><td>تقارير الاعتماد من لجان التحكيم</td><td>تحكيم واعتماد ١٠٠٪ من الحزم المرفوعة للتطبيق</td></tr>
+    </table>
+    </div>
+
+    <h3>محاور المبادرة</h3>
+    <ul>
+      <li>الهوية الاستراتيجية للمشروع والمواءمة الوطنية</li>
+      <li>التموضع الاستراتيجي والميزات الابتكارية (القيمة المؤسسية المضافة)</li>
+      <li>التشخيص الاستراتيجي للواقع — تحليل البيئة الداخلية والخارجية</li>
+      <li>هندسة المشكلة التربوية</li>
+      <li>مؤشرات الأداء الاستراتيجية</li>
+      <li>دورة حياة المشروع وخطة التنفيذ</li>
+      <li>إدارة المخاطر المؤسسية</li>
+      <li>حوكمة الشواهد والأدلة الداعمة</li>
+      <li>التدرّج الاستراتيجي واستدامة الأثر — الرؤية المتوافقة مع ٢٠٣٠</li>
+    </ul>
+
+    <div class="callout"><b>المواءمة الوطنية:</b> تتوافق المبادرة مع مستهدفات رؤية المملكة ٢٠٣٠
+    في تنمية القدرات البشرية ورفع جاهزية الطالب للاختبارات الوطنية والدولية.</div>
+ </div>
+<div data-lang="en">
+    <h3>Core Idea</h3>
+    <p>The Itqan initiative offers a decentralised educational tool engineered to address the
+    <b>knowledge-decay</b> gap and to narrow the divergence between school assessment and standardised
+    test results (Aptitude and Achievement). The tool relies on <b>spaced repetition</b> algorithms to
+    accompany the student across three years, ensuring foundational knowledge moves from short-term to
+    long-term memory and remains reliably available for immediate recall.</p>
+
+    <h3>Innovative Pillars</h3>
+    <ul>
+      <li><b>Governing knowledge production through gamification:</b> breaking the teacher's monopoly on
+      information by turning the student from a passive consumer into a competitive content creator, within
+      an institutional framework filtered by specialist review committees.</li>
+      <li><b>Data sovereignty and psychological safety:</b> an offline-first infrastructure with locally
+      encrypted achievement data via pseudonymisation, protecting digital privacy and the psychological
+      safety of struggling students.</li>
+      <li><b>Differentiated leadership empowerment:</b> a diagnostic survey that sorts high-performing
+      students into generalist leaders and subject specialists, to drive the peer-learning cycle and
+      transfer learning impact effectively.</li>
+    </ul>
+
+    <h3>Educational Problem Engineering</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>Dimension</th><th>Diagnosis</th></tr>
+      <tr><td>Diagnostic statement</td><td>The deep standards gap between high school assessment and low Qiyas test results stems from a failure to sustain knowledge through spaced repetition, and from the serious waste of high-performing students' leadership capacity.</td></tr>
+      <tr><td>Quantitative scale</td><td>Action-research data shows that over <b>40%</b> of students lose their foundational knowledge base after moving up a grade, undermining cumulative readiness and obstructing educational quality targets.</td></tr>
+      <tr><td>Root causes</td><td>The absence of scheduled digital review systems, and the waste of student knowledge capital — talented students leave the school without their capabilities being used to raise struggling peers, disabling peer learning and leaving the teacher as the sole bottleneck for knowledge.</td></tr>
+      <tr><td>Expected impact if neglected</td><td>Narrowing access to quality university admission, and a decline in the school's standing on external performance indicators.</td></tr>
+    </table>
+    </div>
+
+    <h3>Strategic Performance Indicators</h3>
+    <div style="overflow-x:auto">
+    <table>
+      <tr><th>Operational goal</th><th>Indicator</th><th>Measurement tool</th><th>Time-bound target</th></tr>
+      <tr><td>Simulating national and international standardised assessment</td><td>Completion and solving of comprehensive review packs inside the tool</td><td>Project cloud dashboard</td><td>Passing 80% of the packs designated for assessment</td></tr>
+      <tr><td>Governing collaborative content</td><td>Number of knowledge packs approved and reviewed by subject committees</td><td>Approval reports from review committees</td><td>Review and approval of 100% of packs submitted for use</td></tr>
+    </table>
+    </div>
+
+    <h3>Initiative Components</h3>
+    <ul>
+      <li>Strategic identity of the project and national alignment</li>
+      <li>Strategic positioning and innovative features (institutional value added)</li>
+      <li>Strategic diagnosis of the current situation — internal and external environment analysis</li>
+      <li>Educational problem engineering</li>
+      <li>Strategic performance indicators</li>
+      <li>Project lifecycle and implementation plan</li>
+      <li>Institutional risk management</li>
+      <li>Governance of evidence and supporting documentation</li>
+      <li>Strategic progression and impact sustainability — a vision aligned with 2030</li>
+    </ul>
+
+    <div class="callout"><b>National alignment:</b> the initiative aligns with Saudi Vision 2030 targets
+    for human capability development and for raising student readiness for national and international assessments.</div>
+ </div>
+  </div>
+  <a href="../index.html" class="back"><span data-lang="ar">→ العودة إلى السيرة الذاتية</span><span data-lang="en">← Back to CV</span></a>
+</section>
+<footer><span data-lang="ar">© ٢٠٢٦ أحمد عطية حسن الزهراني</span><span data-lang="en">© 2026 Ahmed Atiyah Hassan AL-Zahrani</span></footer>
+</div>
+
+<script>
+(function(){
+  var KEY='ahmed_cv_lang';
+  function apply(l){
+    document.body.setAttribute('data-active',l);
+    document.body.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    document.documentElement.setAttribute('lang',l);
+    document.documentElement.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    var b=document.getElementById('langBtn');
+    if(b) b.textContent = (l==='ar') ? 'English' : 'العربية';
+    try{ localStorage.setItem(KEY,l); }catch(e){}
+  }
+  window.toggleLang=function(){
+    apply(document.body.getAttribute('data-active')==='ar'?'en':'ar');
+  };
+  apply('en');   // تُفتح الصفحة بالإنجليزية دائماً
+})();
+</script>
+</body>
+</html>
